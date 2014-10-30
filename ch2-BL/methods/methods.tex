@@ -1,0 +1,169 @@
+\linespread{1.6}\selectfont
+
+\section{Methods}
+
+We use two atmospheric models to estimate the atmospheric changes: the first is a simple one-dimensional model of a convective boundary layer, and the second is a complex three-dimensional regional climate model.  Because of their differing levels of complexity, these models have complementary strengths and weaknesses.  The simple model isolates the central physical processes of land surface energy partitioning and entrainment of free tropospheric air; however, the simple model neglects secondary but important processes such as lateral advection, topographic effects on flow, and radiation change.  The complex model, on the other hand, includes these and many other processes and can thus represent spatial heterogeneity and unanticipated feedbacks; however, the inclusion of so many processes can obscure the connection between stomatal dynamics and temperature and humidity changes.  By using both models, we test the robustness of the stomatal effects and explore both the central processes and the complex implications.
+
+In both models, we use the stomatal response parameters for soil moisture and $VPD$ derived in the previous chapter to calculate stomatal conductance and thus latent heat flux.  Tests with each model are conducted over a range of soil moisture values and synoptic conditions typical of August in the northern California Coast Range.  We quantify the differences in surface temperature, near-surface air temperature, boundary layer depth, and near-surface humidity between a hypothetical all-Douglas-fir forest and a hypothetical all-Pacific-madrone forest.
+
+\subsection{1-D model}
+The 1-D model [\textit{Tennekes and Driedonks}, 1981; \textit{Garratt}, 1992; \textit{Siqueira et al.}, 2009] simulates the evolution of boundary layer height, potential temperature, and humidity, given surface fluxes and free troposphere conditions.  The boundary layer is assumed to be well mixed, with uniform potential temperature ($\Theta$, Kelvin) and specific humidity ($Q$, g/kg), and to be capped by a temperature inversion represented by a step change, as shown in Figure 2 from \textit{Siqueira et al.} [2009].  The height of the boundary layer, $h$ (m), is assumed to grow due to buoyant convection only, in such a way that the entrainment heat flux at the top of the boundary layer is a fixed fraction of the sensible heat flux at the land surface (as in \textit{Garratt} [1992], Section 6.1.5.)  Because the model is 1-D, it assumes horizontal homogeneity, meaning no lateral variation in surface fluxes or properties and no net horizontal advection.
+
+The evolution of $h$ is modeled as
+
+% dh/dt equation
+\begin{equation}
+\frac{dh}{dt} = (1+2\beta)\frac{H/\rho c_p}{\Gamma_\Theta h},
+\end{equation}
+where $H$ is the surface sensible heat flux (W/m$^2$), $\rho$ is the density of air (kg/m$^3$), $c_p$ is the heat capacity of air at constant pressure (J/kg/K), $\Gamma_\Theta$ is the lapse rate of potential temperature above the boundary layer (K/m), and $1+2\beta$ is the proportionality relating surface sensible heat flux to entrainment heat flux at the top of the boundary layer.  The time tendency of the boundary layer height, and thus of entrainment at the top of the boundary layer, is used to solve for the evolution of $\Theta$ and $Q$:
+
+% dTheta/dt equation
+\begin{equation}
+\frac{d\Theta}{dt} = \frac{1}{h}\left(\frac{H}{\rho c_p}+\Delta\Theta\frac{dh}{dt}\right)
+\end{equation}
+% dQ/dt equation
+\begin{equation}
+\frac{dQ}{dt} = \frac{1}{h}\left(\frac{E}{\rho}+\Delta Q \frac{dh}{dt}\right),
+\end{equation}
+where $E$ is surface evapotranspiration (g/m$^2$/s), $\Delta\Theta$ (K) is the jump in potential temperature across the inversion at the top of the mixed layer, and $\Delta Q$ (g/kg) is the jump in specific humidity across the inversion.  These jumps are calculated using
+
+% dDTheta/dt equation
+\begin{equation}
+\frac{d\Delta\Theta}{dt} = \Gamma_\Theta\frac{dh}{dt}-\frac{d\Theta}{dt}
+\end{equation}
+% dDQ/dt equation
+\begin{equation}
+\frac{d\Delta Q}{dt} = \Gamma_Q\frac{dh}{dt}-\frac{dQ}{dt},
+\end{equation}
+where $\Gamma_Q$ is the lapse rate of water vapor above the mixed layer.
+
+$E$ is the sum of transpiration ($E_t$) and soil evaporation ($E_{soil}$); evaporation of intercepted canopy water is negligible during the dry season days considered here.  $E_t$ is simulated following the procedure in Chapter XX, Section XX: normalized sap velocity at the outer edge of the sapwood ($v_n$, ranging from 0 to 1) is predicted with a Jarvis model for stomatal conductance [REF] with parameters estimated from sap flow measurements (species-averaged parameters in Table XX), and $v_n$ is scaled up to regional transpiration using the observed Douglas fir tree-diameter--sapwood-depth relationship (Equation XX) and an FIA-derived tree size distribution [REF, all-species distribution, black line in Ch XX Figure XX].  The Douglas fir sapwood depth relation is used for both the Douglas fir and Pacific madrone model runs in order to eliminate variation due to sapwood area and focus on variation due to stomatal response.
+
+Soil evaporation is estimated using a simplified version of the CLM model soil evaporation scheme [\textit{Oleson et al.}, 2010]:
+\begin{equation}
+E_{soil} = \frac{-\beta_{soi}(q_{air}-q_{ground})}{r_{aw}+r_{litter}},
+\end{equation}
+where $\beta_{soi}$ is a reduction factor based on soil moisture (Equation 5.68 in \textit{Oleson et al.} [2010] with $\theta_{fc,1}=0.15$), $q_{air}$ is the specific humidity of the air (g/kg), $q_{ground}$ is the saturation specific humidity at ground temperature (g/kg), $r_{aw}$ is the resistance to water vapor transfer from the ground to the canopy air space (Equation 5.99 in \textit{Oleson et al.} [2010] with $C_s=0.004$ and $u_*=0.4$ m/s), and $r_{litter}$ is the resistance to water vapor transfer through the litter layer (Equation 5.106 in \textit{Oleson et al.} [2010] with $L^{eff}_{litter}=0.5$ m$^2$/m$^2$).
+
+Incoming radiation is prescribed using typical values for August in this region.  For incoming solar radiation ($S_{down}$), we use the average diurnal course of total solar radiation measured at an open meadow station at the Angelo Coast Range Reserve (ACRR) on August 15 of 2009-2011.  For downward longwave radiation ($L_{down}$), we use the GEWEX Surface Radiation Budget [Stackhouse \textit{et al.}, 2011] mean diurnal pattern from the month of August (years 2003-2007) for the grid cell nearest the ACRR field site.  Shortwave albedo is set to 0.1 and longwave emissivity is set to 0.95 for both species in order to eliminate variation due to vegetation radiative properties (0.1 is the albedo and XX is the emissivity for broadleaf evergreen temperate trees in CLM [Oleson \textit{et al.}, 2010].)  Ground heat flux is set equal to 5\% of net radiation [Og\'{e}e \textit{et al.}, 2001].  Aerodynamic resistance ($r_a$) is held constant at 10 s/m, which is a representative value for typical winds and near neutral conditions using Equation 14.33 from Bonan (2008); this particular value was chosen to give surface and air temperatures close to observations.
+
+Given this predicted $E$, along with prescribed incoming radiation and aerodynamic resistance, the surface energy balance is solved for surface temperature ($T_s$, K) using the Newton-Raphson method and a timestep of 1 second, and $T_s$ is then used to calculate outgoing longwave radiation ($L_{up}$, W/m$^2$) and sensible heat flux ($H$, W/m$^2$).  Potential temperature $\Theta$ is adjusted for altitude to air temperature $T_a$ for calculating $H$ and $LE_t$ (VPD), using an altitude of 400 m and an adiabatic lapse rate of 10 K/km.  
+
+Free troposphere conditions (needed for $\Gamma_{\Theta}$ and $\Gamma_Q$ in Equations XX and XX) are derived from atmospheric soundings at Oakland International Airport, 250 km south of the Rivendell field site (downloaded from the archive at the University of Wyoming, http://weather.uwyo.edu/upperair/sounding.html).  The sounding site and field site are similar distances from the Pacific coast (16 km for the field site and 25 km for Oakland Airport) and both have prevailing wind directions from the west over the ocean.  Oakland is influenced by fog, but it is also at lower altitude (near sea level), whereas much of northern Coast Range forest region has a base elevation of at least 400 m; as such, we neglect sounding measurements from below 400 m, thus excluding much of the fog.  Profiles of $\Theta$ and $Q$ from 4 AM local time are averaged for the months of July and August from 2009 to 2011, binned by daily maximum temperature ($T_{max}$) measured at the ACRR: cool days ($T_{max} < 20^{\circ}$C), intermediate days ($20^{\circ}$C $\le T_{max} < 30^{\circ}$C), and hot days ($T_{max} \ge 30^{\circ}$C).  The average profiles and the piecewise linear approximations used in the model are shown in Figure \ref{fig:BL_LapseRates}.
+
+\begin{figure}[here]
+\includegraphics[width=1\textwidth]{ch2-BL/figures/fitted_lapserates_theta_Q_onefig.png}
+\caption{}
+\label{fig:BL_LapseRates}
+\end{figure}
+
+The range of soil moisture, free troposphere, and tree species conditions tested are listed in Table \ref{table:BL_1Druns}.  
+
+\begin{table}
+\begin{tabular}{ l c }
+\hline
+ & Range of values tested \\ \hline
+Jarvis $VPD$ and $\theta_{rel}$ parameters & Douglas fir, Pacific madrone (Table XXX)\\
+Lapse rates $\Gamma_{\Theta}$ and $\Gamma_Q$ & 1 (blue in Figure \ref{fig:BL_LapseRates}), 2 (yellow), 3 (red)\\
+Relative soil moisture $\theta_{rel}$ & 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5\\
+\hline
+\end{tabular}
+\caption{Range of values tested using the one-dimensional boundary layer model.}
+\label{table:BL_1Druns}
+\end{table}
+
+\subsection{Regional climate model}
+In order to further test the impact of these two tree species on the atmospheric boundary layer, we use WRF-Noah [Skamarock \textit{et al.}, 2008], a three-dimensional, non-hydrostatic regional climate model (Weather Research and Forecasting, or WRF) with terrain-following vertical coordinates and a coupled land surface model (Noah).  In WRF, the conservation equations for momentum, mass, and energy are solved numerically to calculate the temporal evolution of atmospheric state variables, including air temperature, pressure, humidity, and wind velocity.  
+
+\begin{table}
+\begin{tabular}{l l}
+\hline
+Scheme & Setting \\ \hline
+WRF version & 3.6 \\
+Grid nesting & two-way \\
+Lateral boundary conditions & NCEP Eta analysis \\
+Soil levels & 4 \\
+Land use and soil categories & USGS \\
+Land surface model & Noah \\
+Surface layer & MM5 Monin-Obukhov \\
+Planetary Boundary Layer (PBL) & ACM2 \\
+Microphysics & WSM 3-class simple ice \\
+Longwave radiation & RRTM \\
+Shortwave radiation & Dudhia \\
+Cumulus & Kain-Fritsch (new Eta) \\
+Turbulence closure & Horizontal Smagorinzky first order \\
+Momentum advection & 5th order horizontal, 3rd order vertical \\
+Scalar advection & Positive definite \\
+Lateral boundary & 5 grid points \\
+\hline
+\end{tabular}
+\caption{WRF parameterization options.  See Skamarock \textit{et al.} [2008] for description of schemes.}
+\label{table:BL_paramschemes}
+\end{table}
+
+Subgrid processes, including radiation, planetary boundary layer (PBL) turbulence, cloud microphysics, and convection, are parametrized in WRF, and the parametrization schemes used here are listed in Table \ref{table:BL_paramschemes}.  The ACM2 PBL scheme was used because of its ability to represent both convective regimes (non-local transport) and shear-dominated regimes (local transport) [Pleim, 2007], and because of its good performance in other WRF studies [CITATIONS including Marjanovic].
+
+\begin{table}
+\begin{tabular}{ l c c c c c c c }
+\hline
+Domain & $\Delta x$ (km) & $\Delta y$ (km) & $nx$ & $ny$ & $nz$ & $\Delta t$ (s) & USGS data res \\ \hline
+d01 & 8.1 & 8.1 & 96 & 99 & 45 & 45 & 2 min\\
+d02 & 2.7 & 2.7 & 175 & 175 & 45 & 15 & 2 min\\
+\hline
+\end{tabular}
+\caption{Model domains. d01 refers to the outer domain, and d02 refers to the inner domain.}
+\label{table:BL_domains}
+\end{table}
+
+The tests are run with two nested domains centered on the northern Coast Range (Figure XX).  The domains are two-way nested, meaning that the outer domain (d01) provides the lateral boundary conditions for the inner domain (d02), and the inner domain states are fed back to the outer domain throughout the region coincident with the inner domain.  Two-way nesting improves model accuracy, particularly in regions of complex terrain [CITATIONS].  The domain resolutions and dimensions are listed in Table \ref{table:BL_domains}.  The lateral boundaries of the outer domain are forced with NCEP Eta 212 grid (40 km) operational analysis [NCEP, 1998] for the period of 2009-08-16 00:00 to 2009-08-30 00:00, with the first 32 hours discarded as model spin-up.  This time period is rain-free and sunny at the Angelo Reserve and represents the mid- to late-summer season when soil moisture is highly limited and incoming radiation is still strong (cf. Chapter XX Figure XX - rivendell met time series).
+
+Observed topography and USGS vegetation and soil types are used, with the exception of the northern Coast Range region highlighted in Figure XX, where the vegetation and soil types are assigned to dummy types.  The VPD and soil moisture stomatal response parameters of this dummy type are modified according to the test case as described below.  Radiative properties, leaf area, and rooting depth of the dummy type are held constant among the test cases, using the ``Evergreen Needleleaf Forest'' values.
+
+\begin{table}
+\begin{tabular}{ l p{3cm} p{3cm} p{2cm} p{3cm} }
+\hline
+Vegetation type & $\theta_{ref}$ (m$^3$/m$^3$) & $\theta_{wilt}$ (m$^3$/m$^3$) & RS (s/m) & HS (kg/kg)\\ \hline
+ENF & 0.329 (loam) & 0.066 (loam) & 125 & 47.35\\
+Douglas fir & 0.156 & 0.075 & 125 & 47.35\\
+EBF & 0.329 (loam) & 0.066 (loam) & 150 & 41.69\\
+Pacific madrone 1 & 0.105 & 0.047 & 550 & 10.\\
+Pacific madrone 2 & 0.105 & 0.047 & 300 & 20.\\
+\hline
+\end{tabular}
+\caption{Parameters for Noah's Jarvis formulation of stomatal conductance, by vegetation type.  RS is the Noah minimum stomatal resistance parameter in the Jarvis formulation. HS is the Noah scaling factor for the specific humidity deficit in the Jarvis humidity stress function (Equation XX). ENF is the USGS Evergreen Needleleaf Forest land use type; EBF is the USGS Evergreen Broadleaf Forest land use type.}
+\label{table:BL_NoahJarvisparams}
+\end{table}
+
+\begin{table}
+\begin{tabular}{ l p{6cm} p{7cm} }
+\hline
+Run ID & VPD parameters (RS, HS) & Soil moisture parameters ($\theta_{ref}$, $\theta_{wilt}$)\\ \hline
+vDF-sDF & Douglas fir (ENF) & Douglas fir\\
+vEBF-sMD & EBF & Pacific madrone\\
+vMD1-sMD & Pacific madrone 1 & Pacific madrone\\
+vMD2-sMD & Pacific madrone 2 & Pacific madrone\\
+\hline
+\end{tabular}
+\caption{Combinations of stomatal conductance Jarvis parameters used in the WRF tests.  Each pair of parameters is tested for a range of volumetric soil moisture values in the northern Coast Range test region: 0.08, 0.1, 0.12, and 0.14 m$^3$/m$^3$.}
+\label{table:BL_WRFruns}
+\end{table}
+
+The Noah model uses a Jarvis formulation of stomatal conductance similar to that used in Chapter XX (Equation XX).  The XX parameter is the minimum stomatal resistance (equivalent to $1/g_s$), and XX is divided by empirical functions of environmental variables.  The soil moisture stress function is the piecewise-linear, threshold Feddes model [\textit{Feddes et al.}, 1978; \textit{Chen et al.}, 2008].  The parameters for the sigmoid model from Chapter XX (Equation XX, Table XX) thus must be translated to the Feddes parameters (reference or stress point, $\theta_{ref}$, and wilting point, $\theta_{wilt}$).  For each species, we fit a line to $f_{\theta}$ between $f_{\theta}=0.05$ and $f_{\theta}=0.95$ and extrapolate the line to 0 to estimate $\theta_{wilt}$ and to 1 to estimate $\theta_{ref}$ (Figure \ref{fig:BL_FeddesParams}, Table \ref{table:BL_NoahJarvisparams}).
+
+
+Soil moisture in the Coast Range test region is reset each day at midnight local time, so that the soil moisture deviates only minimally from its stated value (e.g. Figure XX shows one of the wettest cases, XXXX, with a daily decline of XX m$^3$/m$^3$ or less).
+
+The empirical function representing humidity stress is similar to the \textbf{Lohammar} function used in Chapter XX (Equation XX):
+
+\textbf{WRF Q EQUATION}
+
+The $1/rsmin * f(VPD)$ using USGS parameters for Evergreen Needleleaf Forest (ENF, COLOR) and Evergreen Broadleaf Forest (EBF, COLOR) are shown in Figure XX (top panel).  For comparison, the $g_{s, max}/\alpha * f(VPD)$ calculated using sap-flow-derived species averaged parameters for Douglas fir and Pacific madrone (Chapter XX, Table XX) are also shown in Figure XX (bottom panel).  The ENF and Douglas fir $g_s$ respond very similarly to humidity stress, so the existing ENF parameters are used to represent the Douglas fir.  The model EBF $g_s$ is much higher than is the Pacific madrone $g_s$ at low $VPD$ (relative to ENF or Douglas fir, respectively).  As such, we run tests with the EBF VPD parameters representing Pacific madrone (parameters listed in Table \ref{table:BL_NoahJarvisparams}; runs TEST NAMES, Table XX), but we also test two additional rsmin-hs parameter pairs that more closely approximate the shape of the sap-flow-derived curve for Pacific madrone (COLORS lines in Figure XX; parameters listed in Table \ref{table:BL_NoahJarvisparams}; runs TEST NAMES, Table XX).
+
+\begin{figure}[here]
+\includegraphics[width=1\textwidth]{ch2-BL/figures/theta_params.png}
+\caption{}
+\label{fig:BL_FeddesParams}
+\end{figure}
+
+
+WRF-Noah is run using the permutations of stomatal response parameters listed in Table \ref{table:BL_NoahJarvisparams}, with a range of soil moisture values (0.08, 0.1, 0.12, 0.14).  These values are equivalent to relative soil moistures of XXXX, given that the saturation moisture content of the loam soil type used in the model is 0.439 m$^3$/m$^3$.  These relative soil moisture values span the range of values observed in August at the Angelo Coast Range Reserve (Chapter XX, Figure XX).

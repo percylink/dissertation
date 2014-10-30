@@ -1,0 +1,739 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  17 OCT 2014 15:42
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**document.tex
+(./document.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, ancientgreek, ibycus, arabic, armenian
+, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutch, u
+kenglish, usenglishmax, esperanto, estonian, farsi, finnish, french, galician, 
+german, ngerman, swissgerman, monogreek, greek, hungarian, icelandic, assamese,
+ bengali, gujarati, hindi, kannada, malayalam, marathi, oriya, panjabi, tamil, 
+telugu, indonesian, interlingua, irish, italian, kurmanji, lao, latin, latvian,
+ lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, polish, portuguese, roma
+nian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turkish,
+ turkmen, ukrainian, uppersorbian, welsh, loaded.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amscls/amsart.cls
+Document Class: amsart 2009/07/02 v2.20.1
+\linespacing=\dimen102
+\normalparindent=\dimen103
+\normaltopskip=\skip41
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip42
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen104
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen105
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count79
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count80
+\leftroot@=\count81
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count82
+\DOTSCASE@=\count83
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count84
+\c@MaxMatrixCols=\count85
+\dotsspace@=\muskip10
+\c@parentequation=\count86
+\dspbrk@lvl=\count87
+\tag@help=\toks15
+\row@=\count88
+\column@=\count89
+\maxfields@=\count90
+\andhelp@=\toks16
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks17
+\multlinegap=\skip43
+\multlinetaggap=\skip44
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 388.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+\copyins=\insert233
+\abstractbox=\box28
+\listisep=\skip45
+\c@part=\count91
+\c@section=\count92
+\c@subsection=\count93
+\c@subsubsection=\count94
+\c@paragraph=\count95
+\c@subparagraph=\count96
+\c@figure=\count97
+\c@table=\count98
+\abovecaptionskip=\skip46
+\belowcaptionskip=\skip47
+\captionindent=\dimen113
+\thm@style=\toks19
+\thm@bodyfont=\toks20
+\thm@headfont=\toks21
+\thm@notefont=\toks22
+\thm@headpunct=\toks23
+\thm@preskip=\skip48
+\thm@postskip=\skip49
+\thm@headsep=\skip50
+\dth@everypar=\toks24
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/07/13 v5.5 Page Geometry
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2010/01/28 v2.1 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count99
+\Gm@cntv=\count100
+\c@Gm@tempcnt=\count101
+\Gm@bindingoffset=\dimen114
+\Gm@wd@mp=\dimen115
+\Gm@odd@mp=\dimen116
+\Gm@even@mp=\dimen117
+\Gm@layoutwidth=\dimen118
+\Gm@layoutheight=\dimen119
+\Gm@layouthoffset=\dimen120
+\Gm@layoutvoffset=\dimen121
+\Gm@dimlist=\toks26
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/datetime/datetime.sty
+Package: datetime 2010/02/06 v2.57 Date Time Package
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+Package: fmtcount 2009/10/02 v1.31
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@padzeroesN=\count102
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/fmtcount/fc-english.def
+File: fc-english 2007/05/26
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/fmtcount/fc-UKenglish.def
+File: fc-UKenglish 2007/06/14
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/fmtcount/fc-british.def
+File: fc-british 2007/06/14
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/fmtcount/fc-USenglish.def
+File: fc-USenglish 2007/06/14
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/fmtcount/fc-spanish.def
+File: fc-spanish.def 2007/05/26
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/fmtcount/fc-portuges.def
+File: fc-portuges.def 2007/05/26
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/fmtcount/fc-french.def
+File: fc-french.def 2007/05/26
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/fmtcount/fc-german.def
+File: fc-german.def 2007/06/14
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/fmtcount/fc-italian.def
+File: fc-italian.def 2009/10/02 Italian support for fmtcount (Edoardo Pasca)
+)
+No configuration file fmtcount.cfg found.
+\@DT@modctr=\count103
+\@ordinalctr=\count104
+\@orgargctr=\count105
+\@strctr=\count106
+\@tmpstrctr=\count107
+\@DT@loopN=\count108
+\@DT@X=\count109
+)
+\@day=\count110
+\@month=\count111
+\@year=\count112
+\c@HOUR=\count113
+\c@HOURXII=\count114
+\c@MINUTE=\count115
+\c@TOHOUR=\count116
+\c@TOMINUTE=\count117
+\c@SECOND=\count118
+\currenthour=\count119
+\currentminute=\count120
+\currentsecond=\count121
+Package datetime Info: No datetime.cfg file found, using default settings on in
+put line 292.
+\@dtctr=\count122
+\dayofyear=\count123
+\dayofweek=\count124
+LaTeX Info: Redefining \today on input line 712.
+\dt@a=\toks27
+\dt@b=\toks28
+) (/usr/local/texlive/2010/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/02/14 v0.04n Graphics/color for pdfTeX
+\Gread@gobject=\count125
+))
+\Gin@req@height=\dimen122
+\Gin@req@width=\dimen123
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2010/01/09 v3.1m Customizing captions (AR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
+\captionmargin=\dimen124
+\captionmargin@=\dimen125
+\captionwidth=\dimen126
+\caption@indent=\dimen127
+\caption@parindent=\dimen128
+\caption@hangindent=\dimen129
+)
+Package caption Info: AMS or SMF document class.
+\c@ContinuedFloat=\count126
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2008/08/31 v1.0b Adding subcaptions (AR)
+\c@subfigure=\count127
+\c@subtable=\count128
+)
+(./document.aux)
+\openout1 = `document.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Try loading font information for U+msa on input line 19.
+ (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 19.
+ (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.70166pt, 418.25368pt, 107.55254pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=591.5302pt
+* \oddsidemargin=-0.56833pt
+* \evensidemargin=35.28255pt
+* \topmargin=7.13666pt
+* \headheight=8.0pt
+* \headsep=14.0pt
+* \topskip=10.0pt
+* \footskip=12.0pt
+* \marginparwidth=90.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=7.0pt plus 11.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count129
+\scratchdimen=\dimen130
+\scratchbox=\box29
+\nofMPsegments=\count130
+\nofMParguments=\count131
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count132
+\MPscratchDim=\dimen131
+\MPnumerator=\count133
+\everyMPtoPDFconversion=\toks30
+) (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2010/04/01 v0.9 Utility functions of pdfTeX for LuaTeX (HO)
+
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2010/04/26 v1.7 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2007/09/30 v1.0 Managing graphics extensions (HO)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2010/02/22 v3.7 Keyval support for LaTeX options (HO)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2010/03/01 v1.9 Key value parser (HO)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2010/01/28 v1.3 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 436.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+(./tex/intro/intro.tex [1{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/up
+dmap/pdftex.map}]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4])
+(./tex/methods/methods.tex [5]
+<img/domain_map.pdf, id=28, 654.0164pt x 372.97838pt>
+File: img/domain_map.pdf Graphic file (type pdf)
+ <use img/domain_map.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6]
+Underfull \vbox (badness 1365) has occurred while \output is active []
+
+ [7 <./img/domain_map.pdf>] [8]
+<img/forcings_combo_good.png, id=46, 893.3375pt x 629.35126pt>
+File: img/forcings_combo_good.png Graphic file (type png)
+
+<use img/forcings_combo_good.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (28.38942pt too wide) in paragraph at lines 95--122
+ [][] 
+ []
+
+
+Underfull \vbox (badness 2245) has occurred while \output is active []
+
+ [9])
+(./tex/results/results.tex
+Underfull \vbox (badness 1137) has occurred while \output is active []
+
+ [10 <./img/forcings_combo_good.png (PNG copy)>]
+<img/solano_wind_wetbkd_dryrg_d02_level0.png, id=55, 722.7pt x 505.89pt>
+File: img/solano_wind_wetbkd_dryrg_d02_level0.png Graphic file (type png)
+
+<use img/solano_wind_wetbkd_dryrg_d02_level0.png> [11]
+<img/solano_wind_drybkd_wetrg_d02_level0.png, id=60, 722.7pt x 505.89pt>
+File: img/solano_wind_drybkd_wetrg_d02_level0.png Graphic file (type png)
+
+<use img/solano_wind_drybkd_wetrg_d02_level0.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12 <./img/solano_wind_wetbkd_dryrg_d02_level0.png>]
+<img/solano_controlwind_minusmean_CA0pt25_d02_level0.png, id=65, 578.16pt x 433
+.62pt>
+File: img/solano_controlwind_minusmean_CA0pt25_d02_level0.png Graphic file (typ
+e png)
+ <use img/solano_controlwind_minusmean_CA0pt25_d02_level0.png>
+<img/solano_diurnalwind_dry_regions_d02_level0.png, id=66, 578.16pt x 433.62pt>
+File: img/solano_diurnalwind_dry_regions_d02_level0.png Graphic file (type png)
+
+<use img/solano_diurnalwind_dry_regions_d02_level0.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<img/solano_controlwind_minusmean_CA0pt1_d02_level0.png, id=67, 578.16pt x 433.
+62pt>
+File: img/solano_controlwind_minusmean_CA0pt1_d02_level0.png Graphic file (type
+ png)
+ <use img/solano_controlwind_minusmean_CA0pt1_d02_level0.png>
+<img/solano_diurnalwind_wet_regions_d02_level0.png, id=68, 578.16pt x 433.62pt>
+File: img/solano_diurnalwind_wet_regions_d02_level0.png Graphic file (type png)
+
+<use img/solano_diurnalwind_wet_regions_d02_level0.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/windprof_hr_avg_CA0pt25.png, id=69, 578.16pt x 433.62pt>
+File: img/windprof_hr_avg_CA0pt25.png Graphic file (type png)
+
+<use img/windprof_hr_avg_CA0pt25.png>
+<img/windprof_diff_hr_avg_dryCR.png, id=70, 578.16pt x 433.62pt>
+File: img/windprof_diff_hr_avg_dryCR.png Graphic file (type png)
+
+<use img/windprof_diff_hr_avg_dryCR.png>
+<img/windprof_diff_hr_avg_dryCV.png, id=71, 578.16pt x 433.62pt>
+File: img/windprof_diff_hr_avg_dryCV.png Graphic file (type png)
+
+<use img/windprof_diff_hr_avg_dryCV.png>
+<img/windprof_diff_hr_avg_drySN.png, id=72, 578.16pt x 433.62pt>
+File: img/windprof_diff_hr_avg_drySN.png Graphic file (type png)
+
+<use img/windprof_diff_hr_avg_drySN.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <img/wind_map_regions2.eps>
+(epstopdf)                    date: 2014-10-14 14:01:46
+(epstopdf)                    size: 12494866 bytes
+(epstopdf)             Output file: <img/wind_map_regions2-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2014-10-14 14:02:39
+(epstopdf)                    size: 3646486 bytes
+(epstopdf)             Command: <epstopdf --outfile=img/wind_map_regions2-eps-c
+onverted-to.pdf img/wind_map_regions2.eps>
+(epstopdf)             \includegraphics on input line 96.
+Package epstopdf Info: Output file is already uptodate.
+<img/wind_map_regions2-eps-converted-to.pdf, id=73, 835.12pt x 639.38875pt>
+File: img/wind_map_regions2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use img/wind_map_regions2-eps-converted-to.pdf>
+
+LaTeX Warning: Float too large for page by 78.77017pt on input line 99.
+
+
+Underfull \vbox (badness 1655) has occurred while \output is active []
+
+ [13 <./img/solano_wind_drybkd_wetrg_d02_level0.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1248) has occurred while \output is active []
+
+ [14 <./img/solano_controlwind_minusmean_CA0pt25_d02_level0.png> <./img/solano_
+diurnalwind_dry_regions_d02_level0.png>] [15 <./img/solano_controlwind_minusmea
+n_CA0pt1_d02_level0.png> <./img/solano_diurnalwind_wet_regions_d02_level0.png>]
+
+Underfull \vbox (badness 2150) has occurred while \output is active []
+
+ [16 <./img/windprof_hr_avg_CA0pt25.png> <./img/windprof_diff_hr_avg_dryCR.png>
+ <./img/windprof_diff_hr_avg_dryCV.png> <./img/windprof_diff_hr_avg_drySN.png>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+<img/solano_wind_CV0pt2_d02_level0.png, id=99, 722.7pt x 505.89pt>
+File: img/solano_wind_CV0pt2_d02_level0.png Graphic file (type png)
+
+<use img/solano_wind_CV0pt2_d02_level0.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<img/solano_controlwind_minusmean_CA0pt2_d02_level0.png, id=100, 578.16pt x 433
+.62pt>
+File: img/solano_controlwind_minusmean_CA0pt2_d02_level0.png Graphic file (type
+ png)
+ <use img/solano_controlwind_minusmean_CA0pt2_d02_level0.png>
+<img/solano_diurnalwind_CV_0pt2_d02_level0.png, id=101, 578.16pt x 433.62pt>
+File: img/solano_diurnalwind_CV_0pt2_d02_level0.png Graphic file (type png)
+
+<use img/solano_diurnalwind_CV_0pt2_d02_level0.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/shifts_CVsmois_12-20_d02.png, id=102, 578.16pt x 433.62pt>
+File: img/shifts_CVsmois_12-20_d02.png Graphic file (type png)
+
+<use img/shifts_CVsmois_12-20_d02.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Missing character: There is no Ð in font cmbx12!
+[18] [19]
+<img/corr_wind_panom_lev110_lag12_CA0pt25.png, id=110, 578.16pt x 433.62pt>
+File: img/corr_wind_panom_lev110_lag12_CA0pt25.png Graphic file (type png)
+
+<use img/corr_wind_panom_lev110_lag12_CA0pt25.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/corr_wind_panom_lev110_lag12_CA0pt1.png, id=111, 578.16pt x 433.62pt>
+File: img/corr_wind_panom_lev110_lag12_CA0pt1.png Graphic file (type png)
+
+<use img/corr_wind_panom_lev110_lag12_CA0pt1.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/pgrad_wind_CA0pt1_level110.png, id=112, 505.89pt x 289.08pt>
+File: img/pgrad_wind_CA0pt1_level110.png Graphic file (type png)
+
+<use img/pgrad_wind_CA0pt1_level110.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<img/lag_corr_pdiff_combo_ncv_scv_d02_CA0pt1.png, id=113, 578.16pt x 361.35pt>
+File: img/lag_corr_pdiff_combo_ncv_scv_d02_CA0pt1.png Graphic file (type png)
+
+<use img/lag_corr_pdiff_combo_ncv_scv_d02_CA0pt1.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/corr_dwind_dpanom_lev110_lag2_dryCR.png, id=114, 578.16pt x 433.62pt>
+File: img/corr_dwind_dpanom_lev110_lag2_dryCR.png Graphic file (type png)
+
+<use img/corr_dwind_dpanom_lev110_lag2_dryCR.png>
+<img/corr_dwind_dpanom_lev110_lag2_dryCV.png, id=115, 578.16pt x 433.62pt>
+File: img/corr_dwind_dpanom_lev110_lag2_dryCV.png Graphic file (type png)
+
+<use img/corr_dwind_dpanom_lev110_lag2_dryCV.png>
+<img/corr_dwind_dpanom_lev110_lag2_drySN.png, id=116, 578.16pt x 433.62pt>
+File: img/corr_dwind_dpanom_lev110_lag2_drySN.png Graphic file (type png)
+
+<use img/corr_dwind_dpanom_lev110_lag2_drySN.png>
+
+LaTeX Warning: Float too large for page by 114.10866pt on input line 202.
+
+
+Underfull \vbox (badness 7649) has occurred while \output is active []
+
+ [20]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/corr_dwind_dpanom_lev110_lag2_wetCR.png, id=120, 578.16pt x 433.62pt>
+File: img/corr_dwind_dpanom_lev110_lag2_wetCR.png Graphic file (type png)
+
+<use img/corr_dwind_dpanom_lev110_lag2_wetCR.png>
+<img/corr_dwind_dpanom_lev110_lag2_wetCV.png, id=121, 578.16pt x 433.62pt>
+File: img/corr_dwind_dpanom_lev110_lag2_wetCV.png Graphic file (type png)
+
+<use img/corr_dwind_dpanom_lev110_lag2_wetCV.png>
+<img/corr_dwind_dpanom_lev110_lag2_wetSN.png, id=122, 578.16pt x 433.62pt>
+File: img/corr_dwind_dpanom_lev110_lag2_wetSN.png Graphic file (type png)
+
+<use img/corr_dwind_dpanom_lev110_lag2_wetSN.png>
+
+LaTeX Warning: Float too large for page by 114.10866pt on input line 219.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<img/lag_corr_dpdiff_combo_ncv_scv_d02_testminusctrl.png, id=123, 433.62pt x 43
+3.62pt>
+File: img/lag_corr_dpdiff_combo_ncv_scv_d02_testminusctrl.png Graphic file (typ
+e png)
+ <use img/lag_corr_dpdiff_combo_ncv_scv_d02_testminusctrl.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/timeheight_T_pdiff_ocnbox_ncvbox_0pt25.png, id=124, 505.89pt x 722.7pt>
+File: img/timeheight_T_pdiff_ocnbox_ncvbox_0pt25.png Graphic file (type png)
+
+<use img/timeheight_T_pdiff_ocnbox_ncvbox_0pt25.png>
+
+LaTeX Warning: Float too large for page by 42.22583pt on input line 235.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 237.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 237.
+ [21]
+<img/timeheight_T_pdiff_ocnbox_ncvbox_diff_dryCV.png, id=128, 505.89pt x 722.7p
+t>
+File: img/timeheight_T_pdiff_ocnbox_ncvbox_diff_dryCV.png Graphic file (type pn
+g)
+ <use img/timeheight_T_pdiff_ocnbox_ncvbox_diff_dryCV.png>
+
+LaTeX Warning: Float too large for page by 56.22583pt on input line 243.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/momentum_terms_diurnal_0pt25.png, id=129, 578.16pt x 433.62pt>
+File: img/momentum_terms_diurnal_0pt25.png Graphic file (type png)
+
+<use img/momentum_terms_diurnal_0pt25.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+<img/momentum_terms_diurnal_diff_dryCV.png, id=133, 578.16pt x 433.62pt>
+File: img/momentum_terms_diurnal_diff_dryCV.png Graphic file (type png)
+
+<use img/momentum_terms_diurnal_diff_dryCV.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23])
+(./tex/discussion/discussion.tex
+Underfull \vbox (badness 1173) has occurred while \output is active []
+
+ [24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27])
+(./tex/refs/refs.tex)
+Overfull \hbox (33.09317pt too wide) in paragraph at lines 11--32
+[]\OT1/cmr/m/n/12 National Cen-ters for En-vi-ron-men-tal Pre-dic-tion/National
+ Weather Ser-vice/NOAA/U.S.
+ []
+
+
+Overfull \hbox (118.9382pt too wide) in paragraph at lines 11--32
+\OT1/cmr/m/n/12 De-part-ment of Com-merce (1998), GCIP NCEP Eta model out-put, 
+http://rda.ucar.edu/datasets/ds609.2/,
+ []
+
+[28] [29 <./img/wind_map_regions2-eps-converted-to.pdf>] [30 <./img/solano_wind
+_CV0pt2_d02_level0.png>] [31 <./img/solano_controlwind_minusmean_CA0pt2_d02_lev
+el0.png> <./img/solano_diurnalwind_CV_0pt2_d02_level0.png>] [32 <./img/shifts_C
+Vsmois_12-20_d02.png>] [33 <./img/corr_wind_panom_lev110_lag12_CA0pt25.png>]
+[34 <./img/corr_wind_panom_lev110_lag12_CA0pt1.png>] [35 <./img/pgrad_wind_CA0p
+t1_level110.png>] [36 <./img/lag_corr_pdiff_combo_ncv_scv_d02_CA0pt1.png>]
+[37 <./img/corr_dwind_dpanom_lev110_lag2_dryCR.png> <./img/corr_dwind_dpanom_le
+v110_lag2_dryCV.png> <./img/corr_dwind_dpanom_lev110_lag2_drySN.png>] [38 <./im
+g/corr_dwind_dpanom_lev110_lag2_wetCR.png> <./img/corr_dwind_dpanom_lev110_lag2
+_wetCV.png> <./img/corr_dwind_dpanom_lev110_lag2_wetSN.png>] [39 <./img/lag_cor
+r_dpdiff_combo_ncv_scv_d02_testminusctrl.png>] [40 <./img/timeheight_T_pdiff_oc
+nbox_ncvbox_0pt25.png>] [41 <./img/timeheight_T_pdiff_ocnbox_ncvbox_diff_dryCV.
+png>] [42 <./img/momentum_terms_diurnal_0pt25.png>] [43 <./img/momentum_terms_d
+iurnal_diff_dryCV.png>] (./document.aux) ) 
+Here is how much of TeX's memory you used:
+ 5094 strings out of 493747
+ 80950 string characters out of 3143546
+ 181634 words of memory out of 3000000
+ 8091 multiletter control sequences out of 15000+200000
+ 12185 words of font info for 47 fonts, out of 3000000 for 9000
+ 875 hyphenation exceptions out of 8191
+ 38i,8n,38p,2280b,488s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2010/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2010/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2010/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2010/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2010/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2010/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2010/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr9.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmti10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti12.pfb>
+Output written on document.pdf (43 pages, 8031800 bytes).
+PDF statistics:
+ 319 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+
