@@ -20,15 +20,15 @@
 
 \section{Methods}
 
-The sensitivity of Solano wind forecasts to soil moisture is tested using experiments with a regional atmospheric model, the Weather Research and Forecasting (WRF) model.  The WRF model, described in Section \ref{sec:BL_WRFdesc} and in detail in Skamarock et al. [2008], is a three-dimensional, non-hydrostatic regional atmospheric model with terrain-following vertical coordinates. WRF has been used extensively in wind energy forecasting [CITATIONS], with generally good performance [CITATIONS].  Accuracy of WRF-forecasted turbine-level winds depends on \textit{(resolution, PBL scheme, lateral forcing, soil moisture **)} [CITATIONS].
+The sensitivity of Solano wind forecasts to soil moisture is tested using numerical experiments with a regional atmospheric model, the Weather Research and Forecasting (WRF) model.  The WRF model, described in Section \ref{sec:BL_WRFdesc} and in detail in Skamarock et al. [2008], is a three-dimensional, non-hydrostatic regional atmospheric model with terrain-following vertical coordinates. WRF has been used extensively in wind energy forecasting [CITATIONS], with generally good performance [CITATIONS, METRIC].  Accuracy of WRF-forecasted turbine-level winds depends on \textit{(resolution, PBL scheme, lateral forcing, soil moisture **)} [CITATIONS].
 
 \subsection{Model setup}
 
-We run WRF with two nested domains centered on the Solano wind farm (Figure \ref{fig:windSol_domainmap}); the domains are described in Table \ref{table:windSol_domains}.  As in Chapter XX, the outer grid forces the lateral boundaries of the inner grid, and the inner grid feeds back to the outer grid across the region where the two domains coincide [Skamarock et al., 2008].  The inner domain has a horizontal resolution of 2.7 km; preliminary tests with a third finer grid (0.9 km) showed little change in the forecasted winds, similar to the results of Marjanovic \textit{et al.} [2014], who found little accuracy improvement with horizontal resolution below 2.7 km in their simple terrain case.  The domain has 45 vertical levels, with a minimum spacing of $\sim$30 m near the surface and increasing with height, interpolated quadratically by the log of pressure (the default WRF setting); turbine-level (60-100 m) wind forecasts are not very sensitive to vertical resolution beyond about 40 levels with this vertical interpolation scheme in WRF [Marjanovic \textit{et al.}, 2014, and references therein].
+We run WRF with two nested domains centered on the Solano wind farm (Figure \ref{fig:windSol_domainmap}); the domains are described in Table \ref{table:windSol_domains}.  As in Chapter XX, the outer grid forces the lateral boundaries of the inner grid, and the inner grid feeds back to the outer grid across the region where the two domains overlap [Skamarock et al., 2008].  The outer and inner domain are Arakawa-C grids with horizontal resolution of 8.1 km and 2.7 km, respectively; preliminary tests with a third finer grid (0.9 km) showed little change in the forecasted winds, similar to the results of Marjanovic \textit{et al.} [2014], who found little accuracy improvement with horizontal resolution below 2.7 km in their simple terrain case.  The domain has 45 vertical levels, with a minimum spacing of $\sim$30 m near the surface and increasing with height, interpolated quadratically by the log of pressure (the default WRF setting); turbine-level (60-100 m) wind forecasts are not very sensitive to vertical resolution beyond about 40 levels with this vertical interpolation scheme in WRF [Marjanovic \textit{et al.}, 2014, and references therein].
 
 \begin{figure}[here]
 \includegraphics[width=1\textwidth]{ch3-wind/img/domain_map.pdf}
-\caption{WRF model domains, showing (a) topographic height in m, and (b) the Coast Range (CR), Central Valley (CV), and Sierra Nevada (SN) regions for soil moisture tests. d01 refers to the outer model domain, and d02 refers to the inner domain.}
+\caption{WRF model domains, showing (a) topographic height in m, and (b) regions used for soil moisture experiments in this study: the Coast Range (CR, blue), Central Valley (CV, green), and Sierra Nevada (SN, red). d01 refers to the outer model domain, and d02 refers to the inner domain.}
 \label{fig:windSol_domainmap}
 \end{figure}
 
@@ -44,9 +44,9 @@ d02 & 2.7 & 2.7 & 175 & 175 & 45 & 15 & 2 min\\
 \label{table:windSol_domains}
 \end{table}
 
-The atmospheric model is coupled to the Noah land surface model with USGS land use and soil classifications.  The observed distributions of land use and soil types are used, as are the default vegetation water-use parameters for each land use type, in order to simulate as closely as possible the real present day sensitivity of Solano winds to soil moisture.  Uncertainties associated with errors in the model representation of water movement in the subsurface and plant water use are addressed in the Discussion. 
+In WRF, the atmospheric model is coupled to the Noah land surface model with USGS land use and soil classifications [Skamarock \textit{et al.}, 2008].  The observed distributions of land use and soil types are used, as are the default vegetation water-use parameters for each land use type [REFS], in order to simulate as closely as possible the real present day sensitivity of Solano winds to soil moisture.  Uncertainties associated with errors in the model representation of water movement in the subsurface and plant water use are addressed in the Discussion. 
 
-As in Chapter XX, the ACM2 PBL scheme is used, following the recommendations of Marjanovic \textit{et al.} [2014] for a locally forced simple terrain case in California; this PBL scheme includes both local (small-scale turbulent) and nonlocal (large convective plume) vertical transport, and can thus simulate both stable and unstable conditions [Pleim, \textit{2007}].  The model is forced at the lateral boundaries with NCEP Eta 212 grid (40 km) operational analysis [NCEP, 1998].  Other parameterization schemes and settings are the same as those in Chapter XX Table XX.  Model variables are output every 30 minutes.
+As in Chapter XX, the ACM2 PBL scheme is used, following the recommendations of Marjanovic \textit{et al.} [2014] for a locally forced simple terrain case in California; this PBL scheme includes both local (small-scale turbulent) and nonlocal (large convective plume) vertical transport, and can thus simulate both stable and unstable conditions [Pleim, \textit{2007}] A LITTLE MORE DETAIL ABOUT THE PHYSICS.  The model is forced at the lateral boundaries with NCEP Eta 212 grid (40 km) operational analysis [NCEP, 1998].  Other parameterization schemes and settings are the same as those in Chapter XX Table XX.  Model variables are output every 30 minutes.
 
 All experiments are run for the period 2009-06-26 00:00 UTC to 2009-07-11 00:00 UTC, and the first 32 hours are discarded as model spin-up.  This period was chosen for several reasons: (1) it contains a range of synoptic conditions (weak background wind June 27-July 5, and strong background wind July 6-11), (2) turbine-level wind speeds in this region are highest in the spring and summer [Zhong \textit{et al.}, 2004; Mansbach, 2010], and (3) the sensitivity to soil moisture is expected to be strongest in the warm season when radiation incident to the land surface is greatest, because changes in the relative partitioning between evapotranspiration and sensible heat flux have the largest absolute magnitude then.
 
@@ -66,25 +66,25 @@ In all cases, the soil moisture is set to the prescribed values at the model sta
 %\end{figure}
 
 \begin{table}
-\begin{tabular}{l l l l}
+\begin{tabular}{p{2.5cm} l p{3cm} p{3cm} p{3.5cm}}
 \hline
-Run name & Background SMOIS & Perturbed SMOIS region & Perturbed SMOIS value \\
+Experiment & Run name & Background SMOIS (kg/kg) & Perturbed SMOIS region & Perturbed SMOIS value (kg/kg) \\
 \hline
-CA-0.1 & 0.1 & none & n/a \\
-CA-0.2 & 0.2 & none & n/a \\
-CA-0.25 & 0.25 & none & n/a \\
-dryCR & 0.25 & Coast Range & 0.1 \\
-dryCV & 0.25 & Central Valley & 0.1 \\
-drySN & 0.25 & Sierra Nevada & 0.1 \\
-wetCR & 0.1 & Coast Range & 0.25 \\
-wetCV & 0.1 & Central Valley & 0.25 \\
-wetSN & 0.1 & Sierra Nevada & 0.25 \\
-CV0.05 & 0.2 & Central Valley & 0.05 \\
-CV0.1 & 0.2 & Central Valley & 0.1 \\
-CV0.15 & 0.2 & Central Valley & 0.15 \\
-CV0.25 & 0.2 & Central Valley & 0.25 \\
-CV0.3 & 0.2 & Central Valley & 0.3 \\
-CV0.35 & 0.2 & Central Valley & 0.35 \\
+1 & CA-0.1 & 0.1 & none & n/a \\
+1 & wetCR & 0.1 & Coast Range & 0.25 \\
+1 & wetCV & 0.1 & Central Valley & 0.25 \\
+1 & wetSN & 0.1 & Sierra Nevada & 0.25 \\
+2 & CA-0.2 & 0.2 & none & n/a \\
+2 & dryCR & 0.25 & Coast Range & 0.1 \\
+2 & dryCV & 0.25 & Central Valley & 0.1 \\
+2 & drySN & 0.25 & Sierra Nevada & 0.1 \\
+3 & CA-0.25 & 0.25 & none & n/a \\
+3 & CV0.05 & 0.2 & Central Valley & 0.05 \\
+3 & CV0.1 & 0.2 & Central Valley & 0.1 \\
+3 & CV0.15 & 0.2 & Central Valley & 0.15 \\
+3 & CV0.25 & 0.2 & Central Valley & 0.25 \\
+3 & CV0.3 & 0.2 & Central Valley & 0.3 \\
+3 & CV0.35 & 0.2 & Central Valley & 0.35 \\
 %CV0.05dry & 0.1 & Central Valley & 0.05 \\
 %CV0.15dry & 0.1 & Central Valley & 0.15 \\
 %CV0.2dry & 0.1 & Central Valley & 0.2 \\
@@ -93,7 +93,7 @@ CV0.35 & 0.2 & Central Valley & 0.35 \\
 %CV0.35dry & 0.1 & Central Valley & 0.35 \\
 \hline
 \end{tabular}
-\caption{Model experiments}
+\caption{Model experiments: (1) Dry background, wet perturbation region; (2) Wet background, dry perturbation region; (3) Sensitivity to Central Valley soil moisture.}
 \label{table:windSol_runlist}
 \end{table}
 
