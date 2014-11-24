@@ -3,22 +3,22 @@
 \subsection{1-D model}
 
 \begin{figure}[here]
-\includegraphics[width=1\textwidth]{ch2-BL/figures/testall_Aug15_soilm0pt25_ra10_lapseT2.png}
-\caption{}
+\includegraphics[width=0.9\textwidth]{ch2-BL/figures/testall_Aug15_soilm0pt25_ra10_lapseT2_cropped.png}
+\caption{Diurnal cycle simulated by 1-D model for $\theta_{rel}=0.25$ and lapse rate \#2.  Solid lines: Douglas fir case; dashed lines: Pacific madrone case.  Top left: surface energy flux terms ($R_{net}$ is net radiation, $H$ is sensible heat, $LE_t$ is latent heat due to transpiration, and $LE_s$ is latent heat due to soil evaporation.)  Top right: boundary layer height.  Bottom left: surface temperature ($T_S$) and mixed layer air temperature ($T_A$) adjusted to 400 m elevation (ground level in ACRR).  Bottom right: mixed layer specific humidity ($q$) and $VPD$.}
 \label{fig:BL_1Ddiurnal}
 \end{figure}
 
-The 1-D model simulates a reasonable diurnal cycle, but with temperatures several degrees higher than observations.  Figure \ref{fig:BL_1Ddiurnal} shows a typical diurnal cycle for a moderate lapse rate (\#2) and relative soil moisture ($\theta_{rel}$) $= 0.25$.  The Pacific madrone forest has higher transpiration than the Douglas fir forest, because Pacific madrone stomatal conductance is higher at this value of $\theta_{rel}$ (c.f. Figure XX); both cases have very little soil evaporation at this value of $\theta_{rel}$.  As a result, the Pacific madrone case has lower sensible heat ($H$) than the Douglas fir case, leading to a shallower, cooler, and moister boundary layer over the Pacific madrone forest.
+The 1-D model simulates a reasonable diurnal cycle, but with temperatures several degrees higher than observations.  Figure \ref{fig:BL_1Ddiurnal} shows a typical diurnal cycle for a moderate lapse rate (\#2) and relative soil moisture $\theta_{rel} = 0.25$.  The Pacific madrone forest has higher transpiration than the Douglas fir forest, because Pacific madrone stomatal conductance is higher at this value of $\theta_{rel}$ (c.f. Figure XX); both cases have very little soil evaporation at this value of $\theta_{rel}$.  As a result, the Pacific madrone case has lower sensible heat ($H$) than the Douglas fir case, leading to a shallower, cooler, and moister boundary layer over the Pacific madrone forest.
 
 \begin{figure}[here]
-\includegraphics[width=0.5\textwidth]{ch2-BL/figures/testall_compare_sm_lapse_Ta.png}
-\caption{}
+\includegraphics[width=0.9\textwidth]{ch2-BL/figures/testall_compare_sm_lapse_Ta_cropped.png}
+\caption{Diurnal cycle of air temperature at 400 m (ground level in ACRR), simulated by the 1-D model, for a range of $\theta_{rel}$ (colors) and free troposphere conditions.  Left column: Douglas fir case; right column: Pacific madrone case.  Top row: lapse rate 1 (coolest free troposphere conditions); middle row: lapse rate 2 (moderate free troposphere conditions); bottom row: lapse rate 3 (warmest free troposphere conditions).}
 \label{fig:BL_1DdiurnalTa}
 \end{figure}
 
 \begin{figure}[here]
-\includegraphics[width=0.5\textwidth]{ch2-BL/figures/testall_compare_sm_lapse_q.png}
-\caption{}
+\includegraphics[width=0.9\textwidth]{ch2-BL/figures/testall_compare_sm_lapse_q_cropped.png}
+\caption{Diurnal cycle of boundary layer specific humidity, simulated by the 1-D model, for a range of $\theta_{rel}$ (colors) and free troposphere conditions.  Left column: Douglas fir case; right column: Pacific madrone case.  Top row: lapse rate 1 (most moist free troposphere conditions); middle row: lapse rate 2 (moderate free troposphere conditions); bottom row: lapse rate 3 (driest free troposphere conditions).}
 \label{fig:BL_1DdiurnalQ}
 \end{figure}
 
@@ -35,7 +35,7 @@ The boundary layer is warmer and drier when the free troposphere is warmer and d
 \includegraphics[width=\textwidth]{ch2-BL/figures/all_afternoon_Q.png}
 \caption{}
 \end{subfigure}
-\caption{}
+\caption{Conditions at 3:45 pm in the 1-D model, as a function of soil moisture, for the three free troposphere lapse rates (colors).  (a) Air temperature at 400 m altitude (ground level in ACRR), and (b) specific humidity.  Dashed lines with circles: Douglas fir case.  Dotted lines with triangles: Pacific madrone case.}
 \label{fig:BL_345changes}
 \end{figure}
 
@@ -54,7 +54,7 @@ The differences between the species cases are largest in the afternoon; Figure \
 \includegraphics[width=\textwidth]{ch2-BL/figures/VPD_afternoon_T.png}
 \caption{}
 \end{subfigure}
-\caption{}
+\caption{Air temperature at 400 m elevation at 3:45 pm in the 1-D model, as a function of soil moisture, for the three free troposphere lapse rates (colors).  (a) holding $VPD$ parameters constant at Douglas fir values and varying $\theta$ parameters by species, and (b) holding $\theta$ parameters constant at Pacific madrone values and varying $VPD$ parameters by species.}
 \label{fig:BL_testVPDtheta}
 \end{figure}
 
@@ -66,7 +66,7 @@ The temperature and humidity differences at $\theta_{rel} \le 0.3$ are due large
 
 \begin{figure}[here]
 \includegraphics[width=0.85\textwidth]{ch2-BL/figures/T_Q_h_d02.png}
-\caption{}
+\caption{Time series of near-surface conditions in the WRF tests, averaged over the test region, for a range of $\theta_{volumetric}$ values (colors).  Top panel: air temperature (K) at 2 m above ground level for the all-Douglas-fir case.  Second panel: difference in 2 m air temperature between the all-Pacific-madrone case and the all-Douglas-fir case.  Third panel: specific humidity ($q$, kg/kg) at 2 m above ground, for the all-Douglas-fir case.  Fourth panel: difference in 2 m $q$ between the all-Pacific-madrone case and the all-Douglas-fir case.  Fifth panel: boundary layer height in the all-Douglas-fir case.  Sixth panel: difference in boundary layer height between the all-Pacific-madrone case and the all-Douglas-fir case.}
 \label{fig:BL_WRFtseries}
 \end{figure}
 
@@ -74,19 +74,19 @@ In the Douglas fir case, drier soils lead to a hotter, drier, and deeper boundar
 
 \begin{figure}[here]
 \includegraphics[width=1\textwidth]{ch2-BL/figures/T_d02_s0pt08.png}
-\caption{}
+\caption{Left column: temperature ($^\circ$C) in domain d02 for the Douglas fir case.  Right column: temperature difference between the Pacific madrone case and the Douglas fir case.  Top row: 2 m above ground level.  Bottom row: model level at $\sim$390 m above ground (380-395 m for the test region).}
 \label{fig:BL_WRFmapT}
 \end{figure}
 
 \begin{figure}[here]
 \includegraphics[width=1\textwidth]{ch2-BL/figures/Q_d02_s0pt08.png}
-\caption{}
+\caption{Left column: specific humidity (kg/kg) in domain d02 for the Douglas fir case.  Right column: specific humidity difference between the Pacific madrone case and the Douglas fir case.  Top row: 2 m above ground level.  Bottom row: model level at $\sim$390 m above ground (380-395 m for the test region).}
 \label{fig:BL_WRFmapQ}
 \end{figure}
 
 \begin{figure}[here]
 \includegraphics[width=1\textwidth]{ch2-BL/figures/PBLH_d02_s0pt08.png}
-\caption{}
+\caption{Left column: boundary layer height (m) in domain d02 for the Douglas fir case.  Right column: boundary layer height difference (m) between the Pacific madrone case and the Douglas fir case.}
 \label{fig:BL_WRFmapPBLH}
 \end{figure}
 
