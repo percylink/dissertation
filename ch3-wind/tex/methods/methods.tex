@@ -20,7 +20,7 @@
 
 \section{Methods}
 
-The sensitivity of Solano wind forecasts to soil moisture is tested using numerical experiments with a regional atmospheric model, the Weather Research and Forecasting (WRF) model.  The WRF model, described in Section \ref{sec:BL_WRFdesc} and in detail in Skamarock et al. [2008], is a three-dimensional, non-hydrostatic regional atmospheric model with terrain-following vertical coordinates. WRF has been used extensively in wind energy forecasting [CITATIONS], with generally good performance [CITATIONS, METRIC].  Accuracy of WRF-forecasted turbine-level winds depends on \textit{(resolution, PBL scheme, lateral forcing, soil moisture **)} [CITATIONS].
+The sensitivity of Solano wind forecasts to soil moisture is tested using numerical experiments with a regional atmospheric model, the Weather Research and Forecasting (WRF) model.  The WRF model, described in Section \ref{sec:BL_WRFdesc} and in detail in Skamarock et al. [2008], is a three-dimensional, non-hydrostatic regional atmospheric model with terrain-following vertical coordinates. WRF has been used extensively in wind energy forecasting [CITATIONS Marjanovic, Wharton, Carvalho], with generally good performance [CITATIONS, METRIC].  Accuracy of WRF-forecasted turbine-level winds depends on \textit{(resolution - especially in complex topography [Marjanovic, Carvalho], PBL scheme, lateral forcing, soil moisture **)} [CITATIONS].
 
 \subsection{Model setup}
 
@@ -44,7 +44,7 @@ d02 & 2.7 & 2.7 & 175 & 175 & 45 & 15 & 2 min\\
 \label{table:windSol_domains}
 \end{table}
 
-In WRF, the atmospheric model is coupled to the Noah land surface model with USGS land use and soil classifications [Skamarock \textit{et al.}, 2008].  The observed distributions of land use and soil types are used, as are the default vegetation water-use parameters for each land use type [REFS], in order to simulate as closely as possible the real present day sensitivity of Solano winds to soil moisture.  Uncertainties associated with errors in the model representation of water movement in the subsurface and plant water use are addressed in the Discussion. 
+In WRF, the atmospheric model is coupled to the Noah land surface model with USGS land use and soil classifications [Skamarock \textit{et al.}, 2008].  The observed distributions of land use and soil types are used [Eidenshink and Faundeen, 1994; Miller and White, 1998], as are the default vegetation water-use parameters for each land use type, in order to simulate as closely as possible the real present day sensitivity of Solano winds to soil moisture.  Uncertainties associated with errors in the model representation of water movement in the subsurface and plant water use are addressed in the Discussion. 
 
 As in Chapter XX, the ACM2 PBL scheme is used, following the recommendations of Marjanovic \textit{et al.} [2014] for a locally forced simple terrain case in California; this PBL scheme includes both local (small-scale turbulent) and nonlocal (large convective plume) vertical transport, and can thus simulate both stable and unstable conditions [Pleim, \textit{2007}] A LITTLE MORE DETAIL ABOUT THE PHYSICS.  The model is forced at the lateral boundaries with NCEP Eta 212 grid (40 km) operational analysis [NCEP, 1998].  Other parameterization schemes and settings are the same as those in Chapter XX Table XX.  Model variables are output every 30 minutes.
 
