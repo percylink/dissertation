@@ -31,8 +31,8 @@
 \newcommand{\newblock}{\par} % need this for some natbib internal bug
 \usepackage{natbib}
 \citestyle{aa}
-\bibliographystyle{yahapj}
-\setlength{\bibsep}{0ex} % single-space entries
+\bibliographystyle{apalike} %yahapj}
+%\setlength{\bibsep}{0ex} % single-space entries
 \def\bibpreamble{\addcontentsline{toc}{chapter}{Bibliography}} % get a good TOC entry
 
 
@@ -100,9 +100,9 @@ This dissertation was typeset using the
 
 \linespread{1.6}\selectfont
 
-%\include{ch0-introduction/document}
+\include{ch0-introduction/document}
 \include{ch1-sapflow/document}
-%\include{ch2-BL/document}
+\include{ch2-BL/document}
 \include{ch3-wind/document}
 
 \bibliography{thesis}{}
