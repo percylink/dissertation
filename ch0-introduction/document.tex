@@ -1,6 +1,61 @@
 \chapter{Introduction}
 \label{c.intro}
 
+Up to XX\% of rain falling on land returns to the atmosphere through transpiration, the flux of water through plant tissues.  A transpiration flux of this magnitude can increase atmospheric moisture content by XX [cite precip recycling paper] and can alter the surface energy balance by consuming XX\% of the net radiative energy at the land surface (XX W/m$^2$).  Plants actively control the rate of transpiration on timescales of minutes to hours by modulating the openness of their stomata, small pores on their leaves.  In a Mediterranean climate with a hot but dry summer and a wet but cool winter, two strong drivers of transpiration (atmospheric evaporative demand and root-zone water supply) are out of phase.  For evergreen trees in such a climate, what determines the seasonality of transpiration?  How do different tree species respond to environmental drivers of transpiration?  How large are the differences among species compared to the differences between trees of different size or landscape position?
+
+In this dissertation, I use direct, tree-level measurements to show that common California evergreen tree species have different seasons of peak transpiration, and that this occurs because the species respond differently to atmospheric evaporative demand and root-zone water availability.  I scale these observations from a hillslope to the regional level, and I use the regional transpiration estimates along with atmospheric models to quantify the potential impact of species transpiration differences on regional summertime climate.  I extend the investigation of the sensitivity of California climate to evapotranspiration by testing the response of wind energy forecasts at a California wind farm to regional-scale perturbations in soil moisture, concluding that wind at this farm is sensitive on an operationally meaningful level to realistic soil moisture uncertainties.
+
+In order to understand this dissertation, you need to know about a few concepts.  First, you need to know a little about the land surface energy balance and the atmospheric boundary layer.  Second, you need to know a little about transpiration and how plants control it with their stomata.
+
+Land surface energy balance:
+
+The land surface absorbs radiation from the sun (higher frequency radiation, or ``short wave'') and from the atmosphere (lower frequency, or ``long wave'').  The energy that the land surface gains from absorbing radiation is balanced by energy loss through emitted thermal radiation (``outgoing long wave''), conductive heat flux into the ground, and two types of turbulent heat fluxes.  These turbulent heat fluxes are (1) ``sensible heat'', or convective eddies carrying warmer air away from a hot land surface; and (2) ``latent heat'', or turbulent eddies carrying away water vapor evaporated from the land surface.  This evaporative flux is equivalent to an energy flux because evaporation consumes a large amount of the net energy at the land surface; that energy is released later when the water vapor condenses, making the energy ``latent''.
+
+Typical values for these fluxes are XX (from exit seminar).  XX amount of energy is required to evaporate XX mm of water, so XX latent heat flux translates to XX mm of liquid water evaporated.  Typical relative partitioning of net radiation between latent and sensible heat fluxes is XX for XX different scenarios.  Water limitation at the land surface (for instance, because of dry surface soil in a bare ground case, or because of closed stomata in a vegetated setting) reduces the latent heat flux and thus increases the surface temperature and the sensible heat flux to the lower atmosphere.
+
+Plant control of transpiration:
+
+Transpiration happens because plants open their stomata (XX-scale pores in their leaves) in order to take in carbon dioxide for photosynthesis, and in the process, water from the wet interior of the leaf evaporates and exits the stomata [cite Bonan?].  Thus plants play a continual balancing game between gaining carbon dioxide and losing water, particularly in water-limited ecosystems.  Plants actively control the openness of their stomata in order to optimize this balance.  The rate of water loss depends on the stomatal conductivity ($g_s$, a measure of openness) and on the difference in vapor pressure between the interior of the leaf and the outside air (measured by vapor pressure deficit, or VPD):
+
+Equation: $E = g_s * VPD$
+
+The stomatal conductivity responds on short timescales (seconds to minutes) to environmental conditions, including light, VPD, carbon dioxide concentration, and root-zone moisture availability.
+
+Different plant species employ different strategies to balance carbon gain against water loss.  Rapid or excessive water loss can damage plant tissue by causing xylem cavitation, or gas intrusion into the plant's hydraulic system.  However, extended periods of closed stomata can deplete a plant's sugar reserves if the rate of respiration exceeds the rate of photosynthesis.  Some plants adopt a hydraulically cautious strategy, closing stomata quickly as atmospheric evaporative demand grows and as root-zone water is depleted, with the advantage of maintaining a larger ``hydraulic safety margin,'' or difference between actual xylem water potential and the xylem water potential at which cavitation occurs [cite Choat]. One significant downside of this strategy, of course, is the reduced opportunity to take in carbon dioxide for photosynthesis.  At the other end of the spectrum, other species adopt a hydraulically riskier strategy, keeping their stomata more open even as atmospheric evaporative demand increases and the root-zone dries.  With this strategy, plants can take up more carbon dioxide but maintain a lower hydraulic safety margin during times of water stress.
+
+What impact do these distinct hydraulic strategies have on the seasonality of latent heat flux and on the response of latent heat flux to drought? [review other work briefly, Lee, Swann, ...]
+
+In this thesis, I present evidence that common co-occurring evergreen tree species respond differently to root-zone moisture and atmospheric evaporative demand.  The difference is strongest between plant functional types [DEFINE] but is also apparent within a single PFT (e.g. broadleaf evergreen).  Moreover, at least one broadleaf evergreen tree species in this study was markedly less sensitive to root-zone water limitation than suggested by the EBF parameters in common atmospheric models.  These differences are estimated to be strong enough to influence regional-scale atmospheric boundary layer temperature, depth, and humidity.  These results suggest that species-specific, or at least sub-PFT, parameterization of land surface models will give greater model accuracy, but this must be balanced against the difficulty of quantifying many more vegetation subgroups' stomatal response parameters.
+
+[RELEVANCE PARAGRAPH]
+
+Methodological contributions
+
+This thesis contributes methodological innovations to the study of forest transpiration.  These innovations include new applications of statistical techniques to a high-frequency and long-term sap flow dataset, scaling of sap flow measurements to regional transpiration estimates using a publicly-available forest inventory dataset, comparing this sap-flow-derived regional transpiration estimate with satellite-based estimates, and using atmospheric models of varying complexity to quantify the atmospheric response to species differences in transpiration.
+
+This diversity of methods is needed because of the difficulty of relating measurements of evapotranspiration at local and regional scales.  Techniques such as leaf chambers and sap flow instrumentation can measure transpiration at the individual leaf- or tree-scale; however, they are labor-intensive and difficult to deploy beyond the scale of a single plot of land.  Evapotranspiration can be estimated at the 1-10 km$^2$ scale with eddy covariance [cite Baldocchi] or at the XX km$^2$ to continental scale with satellite observation-model hybrids.  Each of these methods has associated uncertainties, and moreover, they estimate the aggregated evapotranspiration, meaning that observed dynamics cannot directly be attributed to any one species or subgroup of plants.  In this thesis, I link individual tree-level observations with the regional  scale by using PCA and MCMC to quantify dominant and consistent patterns that might hold at larger scales.
+
+\hline
+
+Plants are influenced by atmospheric conditions, but plants also can influence those same atmospheric conditions.  Photosynthesis and the health of plant hydraulic systems depend on such atmospheric variables as incoming solar radiation, humidity, and root zone moisture.  Plants in turn affect the atmosphere on short timescales by actively controlling the rate of evaporation at the land surface, and on longer timescales by influencing albedo and thus absorbed radiation, and by influencing the atmospheric concentration of carbon dioxide.  In this dissertation, I investigate the differences in evaporative control dynamics between different tree species and estimate the effect of those evaporative differences on atmospheric boundary layer conditions.  I also investigate the effect of regional-scale changes in land-surface evaporation on wind energy resources.
+
+There are three concepts underlying this work.
+land surface energy balance and water balance
+stomatal control of transpiration
+atmospheric boundary layer
+
+A large fraction of precipitation that falls on the land surface returns to the atmosphere by either transpiration or direct evaporation.  (Define transpiration)
+Radiation absorbed at the land surface can be dissipated in several ways (vague); if water is readily available, a large fraction of the incoming energy can be used to evaporate water.  The balance between energy dissipation through evaporation and energy dissipation by convective heating of the near-surface air influences the character of the near-surface atmosphere, particularly the temperature, pressure, humidity, and wind speed.
+Plants can actively control 
+
+Overarching theme of this dissertation: transfer of water from land surface to atmosphere can influence atmospheric state, like temperature and wind speed.  
+
+First two chapters: Plants actively control this water flux.  Plants must balance carbon gain against water loss, and different species employ different water use strategies.  If scaled to a regional level, these species differences in water use can create different atmospheric boundary layer temperature and humidity.
+
+Last chapter: availability of water at the land surface can drive regional wind circulations.  In California in the summer, when ocean-land thermal contrast already drives strong diurnal cycles of wind, changes in soil moisture can modify wind speed by a magnitude relevant to wind energy production.
+
+Review of important concepts for this dissertation:  Here we review important background concepts, which are discussed in more detail in Bonan, (any other text book? Garratt?)
+
 How does ET (and transpiration especially) matter for the atmosphere?
 \begin{itemize}
 \item energy and moisture
@@ -36,3 +91,8 @@ What we do here:
 \item test the effect of different stomatal responses on the Northern California atmospheric boundary layer (temperature, humidity, and depth) using both a simple and a complex model
 \item test the effects of regional perturbations in soil moisture on near-surface winds, with application to wind energy forecasting
 \end{itemize}
+
+
+Conclusion (?)
+
+What questions remain?  Where tree species are accessing water (deeper roots?  pulling harder?) Connected to this, what effect on streamflow?  Generalizing across regions, aspects, slopes, geologies - methodological difficulty of sampling enough places, and enough species, what common behaviors can we aggregate at classifications broader that the species level.  How will species distribution in the Northern California Coast Range respond to a warmer climate (will there be more droughts? if so, how will each species cope with the particular types of those droughts, length and intensity), interacting with human-influenced fire regime and other management practices?
