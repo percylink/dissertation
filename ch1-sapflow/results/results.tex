@@ -4,7 +4,7 @@
 
 \begin{figure}[here]
 \includegraphics[width=0.9\textwidth]{ch1-sapflow/figures/Figure03.pdf}
-\caption{}
+\caption{Climatic and hydrologic time series: (a) solar radiation (\textit{I}, yellow) and daily rainfall (blue), both measured unobstructed in an open field; (b) daily minimum and maximum air temperature (\textit{T}) at ground stations (R1, R2, R3) and canopy station (TB); (c) daily minimum and maximum vapor pressure deficit (\textit{VPD}) at ground stations (R1, R2, R3) and canopy station (TB); (d) red, green, and gray: daily average relative soil moisture (\textit{$\theta$}), averaged over each of the 6 profiles shown in Figure \ref{fig:sapflow_map} (colors indicate the profile's nearest weather station, as in panel (b) legend); black: average of the 6 profile averages of relative soil moisture.}
 \label{fig:sapflow_met}
 \end{figure}
 
@@ -16,18 +16,24 @@ Water storage below ground is also highly seasonal. The water table, measured by
 
 \begin{figure}[here]
 \includegraphics[width=0.9\textwidth]{ch1-sapflow/figures/Figure04.pdf}
-\caption{}
+\caption{Daily maximum normalized sap velocities for each sensor, separated by species.  Each sensor's line is slightly transparent, so that overlapping lines create darker blue colors.  Data gaps are due largely to power failure during times of low insolation.  Species codes: doug=Douglas-fir; madr=Pacific madrone; live=interior live oak; tan=tanoak.}
 \label{fig:sapflow_normvel}
 \end{figure}
 
-The 99.5th percentile velocities for each sensor and each stage are listed in Table 1, and the timeseries of daily maximum normalized instantaneous velocity for each sensor are shown in Figure \ref{fig:sapflow_normvel}, separated by species (only the daily maximum is shown for visibility.)  For the following analyses, we constructed tree-averaged timeseries for trees with multiple sensors by averaging the normalized velocities at each measurement time for all sensors in a given tree.  This tree-averaging was performed because sensors within a tree covaried strongly for all trees (Table A1), and thus sensors in the same tree were not independent.
+The 99.5th percentile velocities for each sensor and each stage are listed in Table \ref{tbl:tree_props}, and the timeseries of daily maximum normalized instantaneous velocity for each sensor are shown in Figure \ref{fig:sapflow_normvel}, separated by species (only the daily maximum is shown for visibility.)  For the following analyses, we constructed tree-averaged timeseries for trees with multiple sensors by averaging the normalized velocities at each measurement time for all sensors in a given tree.  This tree-averaging was performed because sensors within a tree covaried strongly for all trees (Table \ref{tbl:sapflow_covar}), and thus sensors in the same tree were not independent.
+
+\begin{table}
+  \caption{Covariation of sap velocities within the same tree.}
+  \label{tbl:sapflow_covar}
+  \includegraphics[width=\linewidth]{ch1-sapflow/tables/TableA1.pdf}
+\end{table}
 
 \subsection{Seasonal patterns: Principal Component Analysis}
 \label{sec:seasonal}
 
 \begin{figure}[here]
 \includegraphics[width=0.9\textwidth]{ch1-sapflow/figures/Figure05.pdf}
-\caption{}
+\caption{PCA results for all sensors, for stage 1 (left box) and stage 2 (right box).  Within each stage, left column: PC/EOF 1, right column: PC/EOF 2.  Top row: principal component time patterns.  Circles show days included in the analysis.  Gaps represent periods of missing data longer than 4 days.  Middle row: maps of EOF weighting factors for all trees included in the analysis.  Symbol shape indicates species, as in Figure \ref{fig:sapflow_map}.  Bottom row: EOF weighting factors, sorted by species.  Box plot divides the quartiles of the distribution; red line shows the median.  Both the PCs and EOFs are unitless, because the analysis used normalized velocities.}
 \label{fig:sapflow_eof}
 \end{figure}
 
@@ -46,7 +52,7 @@ These PC/EOF patterns are empirical, indicating the dominant patterns of variabi
 
 \begin{figure}[here]
 \includegraphics[width=0.9\textwidth]{ch1-sapflow/figures/Figure06.pdf}
-\caption{}
+\caption{Sap flow response to environmental drivers for example trees.  Left column: tree 15, Douglas fir.  Right column: tree 16, Pacific madrone.  Top row: \textit{VPD} versus normalized instantaneous sap velocity, with symbols colored by site-averaged relative $\theta$.  Lines show the fitted \textit{VPD} function with different cases of soil moisture.  Middle row: site-averaged site-averaged relative $\theta$ versus normalized instantaneous sap velocity, with symbols colored by \textit{VPD}.  Lines show the fitted soil moisture function with different cases of \textit{VPD}.  Bottom row: solar radiation \textit{I} at station AM versus normalized instantaneous sap velocity, with symbols colored by \textit{VPD}.  Lines show the fitted radiation function, with different cases of \textit{VPD}.}
 \label{fig:sapflow_scatter}
 \end{figure}
 
@@ -57,12 +63,24 @@ The Douglas-fir's higher value of $\theta_o$ shows that this Douglas-fir's sap f
 The response of sap velocity to \textit{I} is captured by the slope $\gamma$, which describes how quickly the sap flow increases with increasing \textit{I}.  In Figure \ref{fig:sapflow_scatter}, the Douglas-fir has a low slope, meaning its sap flow remains high at low \textit{I} and increases only slightly with increasing \textit{I}; while the Pacific madrone has a higher positive slope, meaning that it has low sap flow at low \textit{I} and increases more strongly with increasing \textit{I}.
 
 \begin{figure}[here]
-\includegraphics[width=0.9\textwidth]{ch1-sapflow/figures/Figure07.pdf}
-\caption{}
+\includegraphics[width=0.65\textwidth]{ch1-sapflow/figures/Figure07.pdf}
+\caption{Estimated Jarvis parameters, sorted by species.  Each circle represents the median of the posterior distribution for an individual sensor.  Black horizontal lines show the medians of the posterior distributions for the species-averaged timeseries parameters; vertical black error bars show the 95\% HPD interval (for most species-averaged timeseries parameters, this interval is smaller than the thickness of the horizontal line.)  Row 1: $g_{cmax}/\alpha$ parameter (kPa$^{-1}$), indicating sap velocity at low values of \textit{VPD} and radiation.  Row 2: $D_o$ parameter (kPa), which measures the curvature of the sap velocity increase with increasing \textit{VPD}.  Row 3: $\beta$ parameter (unitless), which measures the rate of sap flow decline around a soil moisture threshold.  The black triangle indicates that one madrone tree has a $\beta$ value higher than 150. Row 4: $\theta_0$ parameter (unitless), which measures the soil moisture value at which sap flow decline is centered.  Row 5: $\gamma$ parameter ((W/m$^2$)$^{-1}$), slope of the sap velocity increase with increasing radiation.}
 \label{fig:sapflow_params}
 \end{figure}
 
-The Jarvis model parameters for all trees, separated by species, are shown in Figure \ref{fig:sapflow_params} and summarized in Table A2.  For 25 of the 26 trees, the posterior distributions of all five parameters are sharply peaked and well within the initial uniform prior chosen (example posterior distributions are shown in Figure A1).  One Pacific madrone tree (tree 16) has a broader distribution for $\beta$ than other trees (see 95\% HPD interval in Table A2.)
+The Jarvis model parameters for all trees, separated by species, are shown in Figure \ref{fig:sapflow_params} and summarized in Table \ref{tbl:sapflow_mcmc}.  For 25 of the 26 trees, the posterior distributions of all five parameters are sharply peaked and well within the initial uniform prior chosen (example posterior distributions are shown in Figure \ref{fig:sapflow_posterior}).  One Pacific madrone tree (tree 16) has a broader distribution for $\beta$ than other trees (see 95\% HPD interval in Table \ref{tbl:sapflow_mcmc}.)
+
+\begin{table}
+  \caption{Median values of estimated Jarvis parameter distributions for each tree, with uncertainties calculated from the 95\% HPD interval.}
+  \label{tbl:sapflow_mcmc}
+  \includegraphics[width=\linewidth]{ch1-sapflow/tables/TableA2}
+\end{table}
+
+\begin{figure}[here]
+\includegraphics[width=0.75\textwidth]{ch1-sapflow/figures/FigureA1.pdf}
+\caption{Panels on the diagonal: posterior distributions of environmental response parameters for the example Douglas-fir sensor (top) and the example Pacific madrone sensor (bottom.)  Panels below the diagonal: covariation of each pair of parameters for each example sensor.}
+\label{fig:sapflow_posterior}
+\end{figure}
 
 The distributions of the median \textit{VPD} parameters for all sensors and for the species-averaged timeseries parameters ($g_{cmax}/\alpha$ and $D_o$, Figure \ref{fig:sapflow_params}, rows 1 and 2) confirm that sap flow in Douglas-firs across this site increases quickly at low \textit{VPD} and plateaus at high \textit{VPD} (high $g_{cmax}/\alpha$ and low $D_o$).  The broadleaf species, in contrast, respond more gradually with increasing \textit{VPD} (lower $g_{cmax}/\alpha$ and higher $D_o$).
 
@@ -80,7 +98,7 @@ The MCMC results show that Douglas-firs and Pacific madrones are at opposite end
 
 \begin{figure}[here]
 \includegraphics[width=0.9\textwidth]{ch1-sapflow/figures/Figure08.pdf}
-\caption{}
+\caption{Difference in normalized daily integral sap velocity between high \textit{VPD} days and low \textit{VPD} days, by species (D=Douglas fir, M=Pacific madrone, L=live oak, B=bay).  Circles show mean difference across all trees in the species for that season, and error bars show one standard deviation.  Row (a): July to September, where high \textit{VPD} days are days with maximum \textit{VPD}$>$2 kPa, and low \textit{VPD} days are days with maximum \textit{VPD}$<$2 kPa.  Row (b): November to February, where high \textit{VPD} days are days with maximum \textit{VPD}$>$0.5 kPa, and low \textit{VPD} days are days with maximum \textit{VPD}$<$0.5 kPa.}
 \label{fig:sapflow_synoptic}
 \end{figure}
 
@@ -92,7 +110,7 @@ In the rainy winter, in contrast, \textit{VPD} varies around a much lower season
 
 \begin{figure}[here]
 \includegraphics[width=0.9\textwidth]{ch1-sapflow/figures/Figure09.pdf}
-\caption{}
+\caption{Timing of dry season decline of Douglas-fir trees in each observation year. Each blue dot represents the date of decline below 50\% of a Douglas-fir treeÕs maximum daily integral, using only high VPD days (R3 daily max $>$2.5 kPa, linearly interpolating across gaps). The box diagram for each year shows the quartiles of the distribution of all Douglas-fir sensors, with the red line indicating the median. The yellow triangles show the date that site-averaged relative $\theta$ declined below 0.27.}
 \label{fig:sapflow_interannual}
 \end{figure}
 
@@ -102,7 +120,7 @@ The timing of onset of Douglas-firs' dry season decline varies between years.  F
 
 \begin{figure}[here]
 \includegraphics[width=0.9\textwidth]{ch1-sapflow/figures/Figure10.pdf}
-\caption{}
+\caption{Estimates of regional transpiration.  Left column: daily average transpiration rate estimated for the three plausible radial functions of sap velocity, using a realistic species distribution (top), assuming all trees are Douglas-fir (center), and assuming all trees are Pacific madrone (bottom.)  Right column: monthly integrals of transpiration estimates, again for the three plausible radial velocity profiles, and for the same three cases of species distribution.  Also shown in the right column are remote sensing estimates of monthly ET at two spatial scales: nearest MODIS pixel to the field site (purple), and MODIS estimate averaged over the Eel River watershed (cyan.)}
 \label{fig:sapflow_regional}
 \end{figure}
 
@@ -112,7 +130,7 @@ The three radial sap velocity profiles tested give transpiration estimates that 
 
 \begin{figure}[here]
 \includegraphics[width=0.9\textwidth]{ch1-sapflow/figures/Figure11.pdf}
-\caption{}
+\caption{Ratio of dry season to peak season ET (MODIS) or transpiration (sap flow); dry season is defined as August + September, and peak season is defined as June + July.  Two spatial scales are shown for MODIS: the pixel nearest to the Rivendell site (purple) and the average for all pixels in the Eel watershed (cyan.)}
 \label{fig:sapflow_ratio}
 \end{figure}
 

@@ -1,9 +1,10 @@
 \section{Methods}
 \subsection{Site description}
+\label{sec:sapflow_sitedesc}
 
 \begin{figure}[here]
 \includegraphics[width=0.9\textwidth]{ch1-sapflow/figures/Figure01.pdf}
-\caption{}
+\caption{Site map, showing topography, weather stations (R1, R2, R3, TB, AM), TDR profiles, and trees instrumented with sap flow sensors.  Symbols for instrumented trees are scaled by the tree diameter.  Tree numbers correspond with those in Table \ref{tbl:tree_props}.  Light gray numbers show elevation above sea level, in m.  Large inset: regional topography near the Angelo Coast Range Reserve (white star) [\textit{GLOBE Task Team et al.}, 1999 XXXX].  Small inset: California, with gray box outlining the region displayed in the large inset, and red dot showing San Francisco.}
 \label{fig:sapflow_map}
 \end{figure}
 
@@ -20,11 +21,17 @@ Both shallow soil moisture and groundwater level are measured at Rivendell.  Dep
 Volumetric $\theta$ measurements are filtered to exclude values outside the sensor's valid range and averaged over each day to reduce noise (no diurnal cycle is evident at this site, in contrast to other Douglas-fir sites [\cite{brooks2006}; \cite{Warren:2007ly}]).  The daily-average values are then averaged across all depths for each profile; each profile average is normalized by its maximum to convert to relative $\theta$ (\%); and the six profiles on the slope are then averaged to produce a site-averaged $\theta$ time series.  The conversion to relative soil moisture is performed because no site-specific TDR calibration was performed.  We explain our reasoning for the site averaging in the Discussion, Section \ref{sec:sapflow_soilmoisture}.
 
 \subsection{Sap flow measurement}
-Sap velocity, the velocity of water through the xylem parallel to the axis of the tree trunk, is measured in 26 trees using 39 heat ratio method sensors (ICT International, Armidale, Australia; \cite{burgess2001improved}) installed 1 m above the ground in the tree trunks.  The tree locations, species, and diameters at breast height are shown in Figure \ref{fig:sapflow_map}, with the symbol size scaled by tree diameter, and the properties of each sensor are listed in Table 1.  The trees were chosen to represent the distribution of tree species and sizes on the hillslope, within the constraints of accessibility on the steep slope and a limited number of sensors.  Multiple trees were instrumented for each species except tanoak (1 tree), which was sparse on this hillslope (uncharacteristically for this region.)  Before installing the sensors, bark was removed to the cambium from an approximately 5 cm x 5 cm area.  Each sensor measures the velocity of a heat pulse emitted by the sensor at two radial depths in the xylem: 12.5 mm and 27.5 mm.  These depths are not precise because of minor errors in sensor placement; errors in probe spacing are corrected using the procedure in \cite{burgess2001improved}.  For this procedure, we assume zero flow at times when water stress is expected to be minimal: pre-dawn (within 3 hours before sunrise), high relative humidity (between 92 and 95\%), no solar radiation, no daily rain, and between January and March.  Sensors were moved in late 2010 to minimize wounding, creating two stages of deployment (2009-2010, and 2011.)  Because we did not measure wound diameters around the probes (as that would be destructive), we assume a wound diameter of 0.2 mm (a central value from Table 1 in \cite{burgess2001improved}) for all sensors; the wound correction is a linear factor and is thus removed by the normalization described below (Section \ref{sec:normalization}).  Heat pulse velocity was recorded on ICT SL5 Smart Loggers (ICT International, Armidale, Australia) at 30-minute intervals.
+Sap velocity, the velocity of water through the xylem parallel to the axis of the tree trunk, is measured in 26 trees using 39 heat ratio method sensors (ICT International, Armidale, Australia; \cite{burgess2001improved}) installed 1 m above the ground in the tree trunks.  The tree locations, species, and diameters at breast height are shown in Figure \ref{fig:sapflow_map}, with the symbol size scaled by tree diameter, and the properties of each sensor are listed in Table \ref{tbl:tree_props}.  The trees were chosen to represent the distribution of tree species and sizes on the hillslope, within the constraints of accessibility on the steep slope and a limited number of sensors.  Multiple trees were instrumented for each species except tanoak (1 tree), which was sparse on this hillslope (uncharacteristically for this region.)  Before installing the sensors, bark was removed to the cambium from an approximately 5 cm x 5 cm area.  Each sensor measures the velocity of a heat pulse emitted by the sensor at two radial depths in the xylem: 12.5 mm and 27.5 mm.  These depths are not precise because of minor errors in sensor placement; errors in probe spacing are corrected using the procedure in \cite{burgess2001improved}.  For this procedure, we assume zero flow at times when water stress is expected to be minimal: pre-dawn (within 3 hours before sunrise), high relative humidity (between 92 and 95\%), no solar radiation, no daily rain, and between January and March.  Sensors were moved in late 2010 to minimize wounding, creating two stages of deployment (2009-2010, and 2011.)  Because we did not measure wound diameters around the probes (as that would be destructive), we assume a wound diameter of 0.2 mm (a central value from Table 1 in \cite{burgess2001improved}) for all sensors; the wound correction is a linear factor and is thus removed by the normalization described below (Section \ref{sec:normalization}).  Heat pulse velocity was recorded on ICT SL5 Smart Loggers (ICT International, Armidale, Australia) at 30-minute intervals.
 
-Wood density and water content were measured by taking cores with an increment borer in October 2010 and October 2012, and these properties are used to convert heat pulse velocity to sap velocity [\cite{burgess2001improved}].  For several sensors, wood density and water content were not measured (Table 1); for these sensors, the species-averaged values were used.  Because water content was only measured once at the end of each stage, we used a constant value throughout the year.  Uncertainties associated with this assumption are discussed in Section \ref{sec:sapflow_soilmoisture}.
+\begin{table}
+  \caption{Sap flow sensor properties, including tree, sensor ID, stage of deployment, species, DBH (diameter at breast height), nearest weather station, active depth (radial sensor position with larger sap velocity), 99.5th percentile instantaneous sap velocity for each sensor position, 12.5 mm - 27.5 mm sensor correlation ($R^2$ coefficient comparing velocities at the two measured radial positions), 99.5th percentile daily integral sap velocity for the active sensor depth, lag time of sap velocity relative to radiation, lag time of sap velocity relative to VPD, wood dry density at the two sensor positions, and wood water content at the two sensor positions.}
+  \label{tbl:tree_props}
+  \includegraphics[width=\linewidth]{ch1-sapflow/tables/Table1.pdf}
+\end{table}
 
-For the following analyses, for each sensor, the depth with the larger magnitude of velocity (i.e. the most ``active'' depth) is chosen.  Sap velocity is known to vary radially through the sapwood [\cite{cohen1985determination}; \cite{vcermak1992radial}; \cite{nadezhdina2002radial}; \cite{ford2004assessing}]; in our measurements, the velocities at 12.5 mm and 27.5 mm differed in magnitude but were highly correlated for almost all sensors ($R^2$ values listed in Table 1); as such, we include only one depth per sensor in order to avoid redundancy.
+Wood density and water content were measured by taking cores with an increment borer in October 2010 and October 2012, and these properties are used to convert heat pulse velocity to sap velocity [\cite{burgess2001improved}].  For several sensors, wood density and water content were not measured (Table \ref{tbl:tree_props}); for these sensors, the species-averaged values were used.  Because water content was only measured once at the end of each stage, we used a constant value throughout the year.  Uncertainties associated with this assumption are discussed in Section \ref{sec:sapflow_soilmoisture}.
+
+For the following analyses, for each sensor, the depth with the larger magnitude of velocity (i.e. the most ``active'' depth) is chosen.  Sap velocity is known to vary radially through the sapwood [\cite{cohen1985determination}; \cite{vcermak1992radial}; \cite{nadezhdina2002radial}; \cite{ford2004assessing}]; in our measurements, the velocities at 12.5 mm and 27.5 mm differed in magnitude but were highly correlated for almost all sensors ($R^2$ values listed in Table \ref{tbl:tree_props}); as such, we include only one depth per sensor in order to avoid redundancy.
 
 Finally, we add the caveat that we treat sap velocity as proportional to transpiration.  We discuss this assumption in Section \ref{sec:sapflow_soilmoisture}.
 
@@ -88,13 +95,15 @@ Thus, we model normalized sap velocity as a function of \textit{VPD}, $\theta$, 
 
 % equation 7
 \begin{align}
+\label{eqn:sapflow_jarvis}
 v_n & =  \frac{g_{cmax}}{\alpha} \cdot VPD \cdot f_{VPD}(VPD) \cdot f_{\theta}(\theta) \cdot f_I(I) \nonumber \\ 
 & =  \frac{g_{cmax}}{\alpha} \cdot \frac{VPD}{1+\frac{VPD}{D_o}} \cdot \frac{1}{1+\exp(-\beta(\theta-\theta_o))} \cdot (\gamma \cdot (I-1000)+1).
 \end{align}
 
-We estimate these five parameters for each sensor using a Markov chain Monte Carlo (MCMC) method, described in Appendix A.  The MCMC method allows us to quantify uncertainty in the parameters and avoid local minima traps on the complex $\chi ^2$ surface that might hinder optimization algorithms.  Each sap flow sensor is matched with the nearest weather station: the canopy weather station (TB) is used for the overstorey trees, while the nearest ground station (R1, R2, or R3) is used for the understorey canopy trees, including small Douglas-firs.  Incoming \textit{I} measured in the open meadow (station AM, Figure \ref{fig:sapflow_map}) is used for all sensors, because \textit{I} was only measured at station AM.  \textit{VPD}, \textit{I}, and $\theta$ were subsampled to the 30-minute frequency of sap flow measurements.  For each tree, sap velocity is lagged relative to \textit{I} and \textit{VPD} by a lag time determined by the maximum lag correlation for that tree's average timeseries, similar to the procedure in \cite{dragoni2009decoupling}; lag times are listed in Table 1.  The analysis is performed using times when \textit{I} was greater than zero (i.e., daytime observations) and \textit{VPD} was greater than 0.1 kPa.  Days with more than 2 mm of rain were excluded, because on those days leaves were probably covered with water and sap velocity thus was probably not controlled by stomatal response to the environment.  The site-averaged, daily-averaged $\theta$ is used for all sensors, as described in Section 2.1.  Parameters are also estimated for each species as a whole, using the average $v_n$ at each measurement from all sensors from a given species; these are referred to as the ``species-averaged timeseries" parameters.
+We estimate these five parameters for each sensor using a Markov chain Monte Carlo (MCMC) method, described in the appendix (Section \ref{sec:sapflow_appendix}).  The MCMC method allows us to quantify uncertainty in the parameters and avoid local minima traps on the complex $\chi ^2$ surface that might hinder optimization algorithms.  Each sap flow sensor is matched with the nearest weather station: the canopy weather station (TB) is used for the overstorey trees, while the nearest ground station (R1, R2, or R3) is used for the understorey canopy trees, including small Douglas-firs.  Incoming \textit{I} measured in the open meadow (station AM, Figure \ref{fig:sapflow_map}) is used for all sensors, because \textit{I} was only measured at station AM.  \textit{VPD}, \textit{I}, and $\theta$ were subsampled to the 30-minute frequency of sap flow measurements.  For each tree, sap velocity is lagged relative to \textit{I} and \textit{VPD} by a lag time determined by the maximum lag correlation for that tree's average timeseries, similar to the procedure in \cite{dragoni2009decoupling}; lag times are listed in Table \ref{tbl:tree_props}.  The analysis is performed using times when \textit{I} was greater than zero (i.e., daytime observations) and \textit{VPD} was greater than 0.1 kPa.  Days with more than 2 mm of rain were excluded, because on those days leaves were probably covered with water and sap velocity thus was probably not controlled by stomatal response to the environment.  The site-averaged, daily-averaged $\theta$ is used for all sensors, as described in Section \ref{sec:sapflow_sitedesc}.  Parameters are also estimated for each species as a whole, using the average $v_n$ at each measurement from all sensors from a given species; these are referred to as the ``species-averaged timeseries" parameters.
 
 \subsection{Estimates of regional transpiration}
+\label{sec:sapflow_regmeth}
 We use the species-averaged timeseries of normalized sap velocity, along with Forest Inventory and Analysis (FIA) [XXXX \textit{Woudenberg et al.}, 2010] observations of tree size and species distributions in the Eel River watershed, to estimate the contribution of each species to regional transpiration.  We estimate regional transpiration, rather than hillslope transpiration at our particular site, because regional distributions of trees by species and diameter are available from the FIA inventory, but no species-diameter inventory has been conducted at our particular site.  This scale jump requires simplifications and assumptions (described below), and as such, our calculations are a rough best estimate and an attempt to bound the range of possible forest transpiration in this region from a bottom-up perspective.  
 
 Transpiration was estimated using Equation \ref{eqn:sf1}, with $v_n$ calculated using the species-averaged timeseries Jarvis parameters, and $\alpha$ disaggregated as follows.  Transpiration for a single tree ($E_{tree}$, cm m$^2$/hr) is
@@ -108,6 +117,7 @@ where $r$ is radial position on a cross-section of the tree, $r_{inner}$ is the 
 
 The thickness of the sapwood is estimated using two site-specific sapwood thickness--diameter relations, derived from 21 tree cores taken near Rivendell (15 Douglas-fir samples ($R^2=0.88$) and 6 Pacific madrone samples ($R^2=0.83$)):
 \begin{align}
+\label{eqn:sapwood}
 w_{sap,Douglas-fir} = 0.12d+0.0089\\
 w_{sap,madrone} = 0.1d+0.0071 ,
 \end{align}
@@ -119,11 +129,28 @@ where $w_{sap}$ is sapwood thickness (m).  Our Douglas-fir relationship is rough
 
 In addition, for other broadleaf species, we use the ring-porous equation from \cite{wullschleger2001transpiration}:
 \begin{equation}
+\label{eqn:sapwood2}
 r_{inner,Wullschleger} = \sqrt{\left(\frac{d}{2}\right)^2-\frac{1.637d^{0.56}}{\pi}}.
 \end{equation}
 This equation is used for non-Pacific-madrone broadleaf species.
 
-Sap velocity was approximated as a linear function of radial position in the sapwood, based on observations that sap velocity is often lower in the inner sapwood than in the outer sapwood [\cite{ford2004assessing}; \cite{cohen1985determination}; \cite{vcermak1992radial}; \cite{nadezhdina2002radial}].  The velocity at the outer edge of the sapwood was estimated as the product of a time-invariant maximum velocity ($v_{max}$, cm/hr) and a time-varying normalized velocity ($v_n$, unitless), approximated as the species-averaged timeseries of measured normalized sap velocity.  $v_{max}$ values for each species were treated as independent of tree diameter and were approximated with the species-averaged maximum instantaneous velocities from Table 2.  Sap velocity is assumed to be independent of azimuth, or equivalently, we assume that $v_{max,sp}$ is an average of the maximum velocity around the bole of a tree.
+Sap velocity was approximated as a linear function of radial position in the sapwood, based on observations that sap velocity is often lower in the inner sapwood than in the outer sapwood [\cite{ford2004assessing}; \cite{cohen1985determination}; \cite{vcermak1992radial}; \cite{nadezhdina2002radial}].  The velocity at the outer edge of the sapwood was estimated as the product of a time-invariant maximum velocity ($v_{max}$, cm/hr) and a time-varying normalized velocity ($v_n$, unitless), approximated as the species-averaged timeseries of measured normalized sap velocity.  $v_{max}$ values for each species were treated as independent of tree diameter and were approximated with the species-averaged maximum instantaneous velocities from Table \ref{tbl:sapflow_maxvel}.  Sap velocity is assumed to be independent of azimuth, or equivalently, we assume that $v_{max,sp}$ is an average of the maximum velocity around the bole of a tree.
+
+\begin{table}
+  \caption{Species-averaged maximum sap velocities.}
+  \label{tbl:sapflow_maxvel}
+  \begin{tabular}{l r}
+  \hline
+  Species & Velocity (cm/h) \\
+  \hline
+  Douglas-fir & 18.2 \\
+  Pacific madrone & 19.5 \\
+  live oak & 14.0 \\
+  bay & 10.1 \\
+  tanoak & 15.0 \\
+  \hline
+  \end{tabular}
+\end{table}
 
 Because the radial profile of sap velocity is not well constrained with our measurements, we test three possible velocity profiles, with $v(r) = v_{max} \, v_n \, f_{prof}(r)$: (1) constant velocity across the sapwood ($f_{prof}(r) = 1$); (2) velocity decreasing linearly from $v_{max} \, v_n$ at the outer edge of the sapwood to $0.5 \, v_{max} \, v_n$ at the inner edge of the sapwood ($f_{prof}(r) = 1+\tfrac{0.5}{w_{sap}}(r-r_{outer})$ ); and (3) velocity decreasing linearly from $v_{max} \, v_n$ at the outer edge of the sapwood to 0 at the inner edge of the sapwood ($f_{prof}(r) = 1+\tfrac{1}{w_{sap}}(r-r_{outer})$ ).
 
@@ -131,7 +158,7 @@ Transpiration is scaled from a single tree to the regional scale using distribut
 
 \begin{figure}[here]
 \includegraphics[width=0.9\textwidth]{ch1-sapflow/figures/Figure02.pdf}
-\caption{}
+\caption{Counts of trees per km$^2$ in major species categories, binned diameter; from FIA plots in the Eel River watershed [\textit{Woudenberg et al.}, 2010 XXXX].  The category ``other conifer'' includes knobcone pine, Jeffrey pine, sugar pine, Western white pine, bishop pine, ponderosa pine, California foothill pine, white fir, grand fir, red fir, Pacific yew, western hemlock, incense cedar, and Sitka spruce.  The category ``other oak'' includes California live oak, canyon live oak, blue oak, Oregon white oak, California black oak, and California white oak.  The category ``other broadleaf'' includes bigleaf maple, California buckeye, red alder, white alder, giant chinkapin, and bitter cherry.}
 \label{fig:sapflow_abundances}
 \end{figure}
 
