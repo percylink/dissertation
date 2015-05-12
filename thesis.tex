@@ -65,7 +65,7 @@
 \copyrightpage
 
 \begin{abstract}
-%My work is awesome. Give me a Ph.D.
+Evapotranspiration cools the land surface by consuming a large fraction of the net radiative energy at the surface.  In forested regions, trees actively control the rate of transpiration by modulating stomatal conductance in response to environmental conditions, and species with different stomatal dynamics can affect the atmosphere in distinct ways.  Using principal component analysis (PCA) and Markov chain Monte Carlo (MCMC) parameter estimation with direct, tree-level measurements of water use, we show that Douglas-firs (\textit{Pseudotsuga menziesii}), a common evergreen needleleaf tree species in the Northern California Coast Range, decrease their transpiration sharply in the summer dry season in response to a dry root zone; and in contrast, broadleaf evergreen tree species, especially Pacific madrones (\textit{Arbutus menziesii}), transpire maximally in the summer dry season because their transpiration is much less sensitive to a dry root zone and increases continually in response to increasing atmospheric evaporative demand.  We scale up these tree-level observations to construct a bottom-up estimate of regional transpiration, and we use these regional estimates along with atmospheric models, one simple and one comprehensive, to quantify the potential impact of species transpiration differences on regional summertime climate. The atmospheric models suggest that these species differences in transpiration could affect the well-mixed atmospheric boundary layer temperature and humidity by 1-1.5 $^\circ$C and 1 g/kg, respectively, and near-surface temperature and humidity by 1.5-2.5 $^\circ$C and 2-3 g/kg, respectively.  We further investigate the sensitivity of California climate to evapotranspiration by estimating the sensitivity of wind energy forecasts at a California wind farm to regional-scale perturbations in soil moisture using a regional atmospheric model.  These tests show that forecasts at this particular farm are most sensitive to soil moisture in the Central Valley, and that changes in soil moisture on the order of previously-demonstrated errors in atmospheric reanalyses lead to wind energy forecast errors of 1-3 m/s, which can translate to differences in forecasted wind energy of 15-40\% of a wind farm's maximum rated power.
 \end{abstract}
 
 \hypersetup{pageanchor=true}
@@ -75,7 +75,7 @@
 \null\vfil
 {\large
 \begin{center}
-%I dedicate this dissertation to graduate students everywhere.
+For my family: Audie, Susannah, Bill, Maggie, and Josie
 \end{center}}
 \null\vfil
 \end{dedication}
@@ -89,9 +89,27 @@
 %% \addcontentsline{toc}{chapter}{List of Code Examples}
 
 \begin{acknowledgements}
-%Too bad nobody helped me.
+
+I am deeply grateful to the many people who have supported, encouraged, and challenged me during my time at Berkeley.
+
+My advisor, Inez Fung, pushed me to do excellent science and has been an extraordinary role model.  Inez taught me to distill a problem to its most important key questions, to seek mechanisms and understand them clearly and fully (because she was going to ask hard questions about them), and to think creatively and intuitively about data analysis.  From Inez, I learned how to speak up when I have something to say and to ask questions with confidence.  She showed me how to focus on the big picture and not take small slights personally, but also how to push back to be heard and taken seriously.  She loves her work and is committed to serving her professional community, and I hope to say the same about my career.
+
+Bill Dietrich shared his passion for science and made my research stronger with his tenacious inquiry in many a Keck project meeting and his attentive reading of this thesis.  Tina Katopodes Chow helped me develop the research questions in Chapter \ref{c.wind} and provided thoughtful feedback on the whole thesis, and her clear teaching gave me a framework for understanding fluid dynamics and numerical methods.  Michael Manga shared honest reflections on academic careers and provided an excellent example of undergraduate teaching.  
+
+Kevin Simonin guided me in the first several years of my Ph.D. and taught me about rigorous field and lab work and all kinds of cool things about plants.  Holly Maness helped me implement the Markov chain Monte Carlo analysis in Chapter \ref{c.sapflow}, gave extensive feedback on Chapters \ref{c.sapflow} and \ref{c.wind}, and provided moral support and friendship through many research and career challenges.
+
+My graduate experience was richer thanks to fellow students, including Abby Swann, Zan Stine, Jesse Day, Stephanie Wuerth, Octavia Crompton, Aparna Bamzai, Yuwei Liu, Andrew Friedman, Tripti Bhattacharya, Jake Seeley, Jake Edman, Nadir Jeevanjee, Daniella Rempe, Jasper Oshun, Ian Rose, Tyler Arbour, Mong-Han Huang, Pam Kaercher, David Mangiante, and Scott French.  Thank you for stimulating discussions and for good times on camping trips and pub golf.
+
+I thank the not-yet-mentioned colleagues on the Keck/Rivendell project for intellectual and material/field support; these colleagues include Todd Dawson, Jim Bishop, Mary Power, Colin Bode, and Peter Steel.  I am grateful to the UC Berkeley EPS departmental staff, especially Margie Winn and David Elvins, thanks to whom I was always paid and registered, and who made my life so much smoother and simpler.
+
+The W. M. Keck Foundation provided support for the instruments used in this dissertation.  Additional funding was provided by DOE grant DE-SC0001470 and NSF grant ATM-0628678.
+
+I am very lucky to have a wonderful, loving, supportive family. I am grateful to my parents for teaching me to value learning, curiosity, and scholarship; for not pushing me too hard, but pushing me when I needed it; for telling me I could do whatever I wanted to do and encouraging me to find work that I love; and for helping me take risks by always backing me up.  I am lucky also to have my sisters, Maggie and Josie, and my dear friend Angela, who have supported and encouraged me and made me laugh a lot.
+
+My wonderful wife, Audie, has given me emotional support through the angst and frustrations of research as well as the joys and triumphs; tangible support of delicious meals and clean clothes (and way too much other housework); and much laughter, happiness, and warmth.  She has shown great patience with my long work hours and distractedness.  Thank you, Audie, for reminding me of the bigger world outside graduate school and the things that matter most in life.
 
 % Feel free to modify or remove this acknowledgment:
+\bigskip \bigskip \bigskip \bigskip
 This dissertation was typeset using the
 \href{https://github.com/pkgw/ucastrothesis}{\textsf{ucastrothesis}}
 \LaTeX\ template.
@@ -99,7 +117,7 @@ This dissertation was typeset using the
 \end{acknowledgements}
 \end{frontmatter}
 
-\linespread{1.6}\selectfont
+%`\linespread{1.6}\selectfont
 
 \include{ch0-introduction/document}
 \include{ch1-sapflow/document}

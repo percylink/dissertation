@@ -339,6 +339,12 @@
     \bigskip \medskip
     {\@field}\par
     \bigskip \medskip
+    and the Designated Emphasis \par
+    \bigskip \medskip
+    in \par
+    \bigskip \medskip
+    Computational Science and Engineering \par
+    \bigskip \medskip
     in the \par
     \bigskip \medskip
     Graduate Division \par
@@ -449,11 +455,13 @@ by\par
 by\par
 \vspace{3ex}
 \@author\par
-\vspace{3ex}
+\vspace{1ex}
 {\@degree} in \@field\par
+\vspace{1ex}
+Designated Emphasis in Computational Science and Engineering\par
 \vspace{3ex}
 University of California, {\@campus}\par
-\vspace{3ex}
+\vspace{1ex}
 {\@chair}, Chair}
 \vspace{3ex}
 \end{center}}
